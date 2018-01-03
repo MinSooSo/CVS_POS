@@ -1,0 +1,11 @@
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\bin\Debug\CSVPos.exe.config
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\bin\Debug\CSVPos.exe
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\bin\Debug\CSVPos.pdb
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.csprojResolveAssemblyReference.cache
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.Properties.Resources.resources
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.csproj.GenerateResource.Cache
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.csproj.CoreCompileInputs.cache
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.exe
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.pdb
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.MainForm.resources
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.StaffNum.resources
