@@ -44,22 +44,23 @@
             this.num7 = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("배달의민족 한나는 열한살 OTF", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(12, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(435, 70);
+            this.label1.Size = new System.Drawing.Size(300, 55);
             this.label1.TabIndex = 0;
             this.label1.Text = "사원 번호 확인 ";
             // 
             // num1
             // 
-            this.num1.Font = new System.Drawing.Font("배달의민족 한나는 열한살 OTF", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.num1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.num1.Location = new System.Drawing.Point(0, 331);
             this.num1.Name = "num1";
             this.num1.Size = new System.Drawing.Size(109, 96);
@@ -69,7 +70,7 @@
             // 
             // num2
             // 
-            this.num2.Font = new System.Drawing.Font("배달의민족 한나는 열한살 OTF", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.num2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.num2.Location = new System.Drawing.Point(107, 331);
             this.num2.Name = "num2";
             this.num2.Size = new System.Drawing.Size(109, 96);
@@ -79,7 +80,7 @@
             // 
             // num3
             // 
-            this.num3.Font = new System.Drawing.Font("배달의민족 한나는 열한살 OTF", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.num3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.num3.Location = new System.Drawing.Point(214, 331);
             this.num3.Name = "num3";
             this.num3.Size = new System.Drawing.Size(109, 96);
@@ -89,7 +90,7 @@
             // 
             // num0
             // 
-            this.num0.Font = new System.Drawing.Font("배달의민족 한나는 열한살 OTF", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.num0.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.num0.Location = new System.Drawing.Point(321, 519);
             this.num0.Name = "num0";
             this.num0.Size = new System.Drawing.Size(109, 96);
@@ -99,7 +100,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("디자인하우스 OTF Bold", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox1.Location = new System.Drawing.Point(24, 141);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -108,7 +109,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Font = new System.Drawing.Font("배달의민족 한나는 열한살 OTF", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnClear.ForeColor = System.Drawing.Color.Red;
             this.btnClear.Location = new System.Drawing.Point(321, 425);
             this.btnClear.Name = "btnClear";
@@ -119,7 +120,7 @@
             // 
             // num6
             // 
-            this.num6.Font = new System.Drawing.Font("배달의민족 한나는 열한살 OTF", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.num6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.num6.Location = new System.Drawing.Point(214, 425);
             this.num6.Name = "num6";
             this.num6.Size = new System.Drawing.Size(109, 96);
@@ -129,7 +130,7 @@
             // 
             // num5
             // 
-            this.num5.Font = new System.Drawing.Font("배달의민족 한나는 열한살 OTF", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.num5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.num5.Location = new System.Drawing.Point(107, 425);
             this.num5.Name = "num5";
             this.num5.Size = new System.Drawing.Size(109, 96);
@@ -139,7 +140,7 @@
             // 
             // num4
             // 
-            this.num4.Font = new System.Drawing.Font("배달의민족 한나는 열한살 OTF", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.num4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.num4.Location = new System.Drawing.Point(0, 425);
             this.num4.Name = "num4";
             this.num4.Size = new System.Drawing.Size(109, 96);
@@ -149,7 +150,7 @@
             // 
             // btnBackspace
             // 
-            this.btnBackspace.Font = new System.Drawing.Font("배달의민족 한나는 열한살 OTF", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnBackspace.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnBackspace.ForeColor = System.Drawing.Color.Red;
             this.btnBackspace.Location = new System.Drawing.Point(321, 331);
             this.btnBackspace.Name = "btnBackspace";
@@ -160,7 +161,7 @@
             // 
             // num9
             // 
-            this.num9.Font = new System.Drawing.Font("배달의민족 한나는 열한살 OTF", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.num9.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.num9.Location = new System.Drawing.Point(214, 519);
             this.num9.Name = "num9";
             this.num9.Size = new System.Drawing.Size(109, 96);
@@ -170,7 +171,7 @@
             // 
             // num8
             // 
-            this.num8.Font = new System.Drawing.Font("배달의민족 한나는 열한살 OTF", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.num8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.num8.Location = new System.Drawing.Point(107, 519);
             this.num8.Name = "num8";
             this.num8.Size = new System.Drawing.Size(109, 96);
@@ -180,7 +181,7 @@
             // 
             // num7
             // 
-            this.num7.Font = new System.Drawing.Font("배달의민족 한나는 열한살 OTF", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.num7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.num7.Location = new System.Drawing.Point(0, 519);
             this.num7.Name = "num7";
             this.num7.Size = new System.Drawing.Size(109, 96);
@@ -190,24 +191,36 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Font = new System.Drawing.Font("배달의민족 한나는 열한살 OTF", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnSubmit.Location = new System.Drawing.Point(123, 250);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(187, 68);
             this.btnSubmit.TabIndex = 14;
             this.btnSubmit.Text = "사원 번호 확인";
             this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("배달의민족 한나는 열한살 OTF", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(146, 84);
+            this.label2.Location = new System.Drawing.Point(151, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(259, 32);
+            this.label2.Size = new System.Drawing.Size(287, 37);
             this.label2.TabIndex = 15;
             this.label2.Text = "ex)201801020704";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(18, 84);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(127, 37);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "입력 양식";
             // 
             // StaffNum
             // 
@@ -215,6 +228,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(431, 618);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.btnBackspace);
@@ -231,8 +245,11 @@
             this.Controls.Add(this.num2);
             this.Controls.Add(this.num1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "StaffNum";
-            this.Text = "StaffNum";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "사원 번호 확인 입력 창";
+            this.Load += new System.EventHandler(this.StaffNum_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,5 +273,6 @@
         private System.Windows.Forms.Button num7;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
