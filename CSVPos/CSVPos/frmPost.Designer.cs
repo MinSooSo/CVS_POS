@@ -56,28 +56,28 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("디자인하우스 OTF Bold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label10.Location = new System.Drawing.Point(28, 127);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(121, 34);
+            this.label10.Size = new System.Drawing.Size(106, 31);
             this.label10.TabIndex = 24;
             this.label10.Text = "택배 회사";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("디자인하우스 OTF Bold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(28, 201);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 34);
+            this.label2.Size = new System.Drawing.Size(106, 31);
             this.label2.TabIndex = 26;
             this.label2.Text = "운임 요금";
             // 
             // textBox2
             // 
-            this.textBox2.Font = new System.Drawing.Font("디자인하우스 OTF Bold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox2.Location = new System.Drawing.Point(194, 201);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -87,17 +87,17 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("디자인하우스 OTF Bold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(28, 275);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(136, 34);
+            this.label3.Size = new System.Drawing.Size(127, 31);
             this.label3.TabIndex = 28;
             this.label3.Text = "운송장 번호";
             // 
             // textBox3
             // 
-            this.textBox3.Font = new System.Drawing.Font("디자인하우스 OTF Bold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox3.Location = new System.Drawing.Point(194, 275);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
@@ -107,17 +107,17 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("디자인하우스 OTF Bold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(28, 357);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(173, 34);
+            this.label4.Size = new System.Drawing.Size(156, 31);
             this.label4.TabIndex = 30;
             this.label4.Text = "택배 접수 시간";
             // 
             // textBox4
             // 
-            this.textBox4.Font = new System.Drawing.Font("디자인하우스 OTF Bold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox4.Location = new System.Drawing.Point(194, 357);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
@@ -126,7 +126,7 @@
             // 
             // btnTakbaego
             // 
-            this.btnTakbaego.Font = new System.Drawing.Font("디자인하우스 OTF Bold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnTakbaego.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnTakbaego.Location = new System.Drawing.Point(35, 432);
             this.btnTakbaego.Name = "btnTakbaego";
             this.btnTakbaego.Size = new System.Drawing.Size(187, 114);
@@ -137,7 +137,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Font = new System.Drawing.Font("디자인하우스 OTF Bold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnCancel.Location = new System.Drawing.Point(303, 432);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(187, 114);
@@ -162,11 +162,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("디자인하우스 OTF Bold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(496, 210);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 26);
+            this.label5.Size = new System.Drawing.Size(28, 25);
             this.label5.TabIndex = 34;
             this.label5.Text = "원";
             // 

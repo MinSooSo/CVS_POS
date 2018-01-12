@@ -12,13 +12,18 @@ namespace CSVPos
 {
     public partial class StoreM : Form
     {
+        private string empName;
+
+        public string EmpName { get => empName; set => empName = value; }
+
         public StoreM()
         {
             InitializeComponent();
         }
 
         private void StoreM_Load(object sender, EventArgs e)
-        { 
+        {
+            labelStaff.Text = empName + "님 오늘도 수고하세요!!";
             timeStart();  
         }
 

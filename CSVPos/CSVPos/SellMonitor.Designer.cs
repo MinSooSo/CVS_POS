@@ -56,18 +56,21 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtDiscountMoney = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtchange = new System.Windows.Forms.TextBox();
+            this.txtDiscountAfterMoney = new System.Windows.Forms.TextBox();
+            this.txtNeedMoney = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtMoney = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -170,7 +173,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(5, 108);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(938, 420);
+            this.dataGridView1.Size = new System.Drawing.Size(938, 413);
             this.dataGridView1.TabIndex = 17;
             // 
             // groupBox1
@@ -193,7 +196,7 @@
             // btnExit
             // 
             this.btnExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnExit.Location = new System.Drawing.Point(6, 595);
+            this.btnExit.Location = new System.Drawing.Point(6, 597);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(221, 112);
             this.btnExit.TabIndex = 7;
@@ -343,16 +346,16 @@
             // 
             this.groupBox3.Controls.Add(this.label21);
             this.groupBox3.Controls.Add(this.label22);
-            this.groupBox3.Controls.Add(this.textBox7);
+            this.groupBox3.Controls.Add(this.txtDiscountMoney);
             this.groupBox3.Controls.Add(this.label20);
+            this.groupBox3.Controls.Add(this.txtMoney);
             this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Controls.Add(this.label18);
             this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.textBox6);
-            this.groupBox3.Controls.Add(this.textBox5);
-            this.groupBox3.Controls.Add(this.textBox4);
+            this.groupBox3.Controls.Add(this.txtDiscountAfterMoney);
+            this.groupBox3.Controls.Add(this.txtNeedMoney);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox3.Location = new System.Drawing.Point(445, 527);
@@ -380,17 +383,17 @@
             this.label22.TabIndex = 33;
             this.label22.Text = "할인 받은 금액";
             // 
-            // textBox7
+            // txtDiscountMoney
             // 
-            this.textBox7.Location = new System.Drawing.Point(163, 103);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(296, 35);
-            this.textBox7.TabIndex = 34;
+            this.txtDiscountMoney.Location = new System.Drawing.Point(163, 103);
+            this.txtDiscountMoney.Name = "txtDiscountMoney";
+            this.txtDiscountMoney.Size = new System.Drawing.Size(296, 35);
+            this.txtDiscountMoney.TabIndex = 34;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(463, 227);
+            this.label20.Location = new System.Drawing.Point(464, 224);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(32, 29);
             this.label20.TabIndex = 32;
@@ -417,20 +420,20 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(21, 224);
+            this.label17.Location = new System.Drawing.Point(20, 221);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(96, 29);
+            this.label17.Size = new System.Drawing.Size(115, 29);
             this.label17.TabIndex = 29;
-            this.label17.Text = "거스름 돈";
+            this.label17.Text = "지불하신 돈";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(21, 164);
+            this.label16.Location = new System.Drawing.Point(20, 164);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(96, 29);
+            this.label16.Size = new System.Drawing.Size(122, 29);
             this.label16.TabIndex = 28;
-            this.label16.Text = "받은 현금";
+            this.label16.Text = "할인 후 금액";
             // 
             // label15
             // 
@@ -441,26 +444,27 @@
             this.label15.TabIndex = 25;
             this.label15.Text = "결제 필요 금액";
             // 
-            // textBox6
+            // txtchange
             // 
-            this.textBox6.Location = new System.Drawing.Point(164, 221);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(296, 35);
-            this.textBox6.TabIndex = 27;
+            this.txtchange.Location = new System.Drawing.Point(609, 817);
+            this.txtchange.Multiline = true;
+            this.txtchange.Name = "txtchange";
+            this.txtchange.Size = new System.Drawing.Size(296, 35);
+            this.txtchange.TabIndex = 27;
             // 
-            // textBox5
+            // txtDiscountAfterMoney
             // 
-            this.textBox5.Location = new System.Drawing.Point(164, 161);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(296, 35);
-            this.textBox5.TabIndex = 26;
+            this.txtDiscountAfterMoney.Location = new System.Drawing.Point(164, 161);
+            this.txtDiscountAfterMoney.Name = "txtDiscountAfterMoney";
+            this.txtDiscountAfterMoney.Size = new System.Drawing.Size(296, 35);
+            this.txtDiscountAfterMoney.TabIndex = 26;
             // 
-            // textBox4
+            // txtNeedMoney
             // 
-            this.textBox4.Location = new System.Drawing.Point(164, 47);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(296, 35);
-            this.textBox4.TabIndex = 25;
+            this.txtNeedMoney.Location = new System.Drawing.Point(164, 47);
+            this.txtNeedMoney.Name = "txtNeedMoney";
+            this.txtNeedMoney.Size = new System.Drawing.Size(296, 35);
+            this.txtNeedMoney.TabIndex = 25;
             // 
             // label8
             // 
@@ -484,19 +488,52 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Emoji", 14F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Location = new System.Drawing.Point(907, 828);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(31, 26);
+            this.label9.TabIndex = 38;
+            this.label9.Text = "원";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Segoe UI Emoji", 14F, System.Drawing.FontStyle.Bold);
+            this.label23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label23.Location = new System.Drawing.Point(464, 824);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(100, 26);
+            this.label23.TabIndex = 36;
+            this.label23.Text = "거스름 돈 ";
+            // 
+            // txtMoney
+            // 
+            this.txtMoney.Location = new System.Drawing.Point(163, 218);
+            this.txtMoney.Multiline = true;
+            this.txtMoney.Name = "txtMoney";
+            this.txtMoney.Size = new System.Drawing.Size(296, 35);
+            this.txtMoney.TabIndex = 37;
+            // 
             // SellMonitor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1184, 861);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label23);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
+            this.Controls.Add(this.txtchange);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
@@ -508,6 +545,7 @@
             this.Name = "SellMonitor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "메인 화면 > 판매 관리";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SellMonitor_FormClosed);
             this.Load += new System.EventHandler(this.SellMonitor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -553,15 +591,18 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtchange;
+        private System.Windows.Forms.TextBox txtDiscountAfterMoney;
+        private System.Windows.Forms.TextBox txtNeedMoney;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtDiscountMoney;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox txtMoney;
     }
 }

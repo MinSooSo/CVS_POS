@@ -19,20 +19,25 @@ namespace CSVPos
 
         private void button1_Click(object sender, EventArgs e) // 판매 관리 버튼 
         {
-            SellMonitor sm = new SellMonitor();
-            sm.Show();
+            staffNum sn = new staffNum();
+            sn.Formname = "sellMonitor";
+            sn.Show();
         }
 
         private void btnProduct_Click(object sender, EventArgs e) // 재고 관리 버튼 
         {
-            FormStoreStock fss = new FormStoreStock();
-            fss.Show();
+            //FormStoreStock fss = new FormStoreStock();
+            //fss.Show();
+
+            staffNum sn = new staffNum();
+            sn.Formname = "stockManagement";
+            sn.Show();
         }
 
         private void btnStore_Click(object sender, EventArgs e) // 매장 관리 버튼 
         {
-            StaffNum sn = new StaffNum();
-            sn.Formname = "store";
+            staffNum sn = new staffNum();
+            sn.Formname = "storeManagement";
             sn.Show();
         }
 

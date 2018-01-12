@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
@@ -54,6 +55,7 @@
     <Compile Include="CustomerAgeSex.Designer.cs">
       <DependentUpon>CustomerAgeSex.cs</DependentUpon>
     </Compile>
+    <Compile Include="DBController.cs" />
     <Compile Include="FormBill.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,7 +235,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="mainsmile.png" />

@@ -220,7 +220,7 @@
             this.labelStaff.AutoSize = true;
             this.labelStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelStaff.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelStaff.Location = new System.Drawing.Point(14, 85);
+            this.labelStaff.Location = new System.Drawing.Point(24, 85);
             this.labelStaff.Name = "labelStaff";
             this.labelStaff.Size = new System.Drawing.Size(381, 39);
             this.labelStaff.TabIndex = 17;

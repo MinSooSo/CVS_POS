@@ -24,3 +24,4 @@ C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.FormStoreInfo.res
 C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.FormSalesInfo.resources
 C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.FormStoreStock.resources
 C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.FormProductOrder.resources
+C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.FormStockDisposal.resources
