@@ -41,6 +41,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.labelStaffName = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
@@ -181,12 +183,36 @@
             this.label5.TabIndex = 18;
             this.label5.Text = "Ver. 0.1";
             // 
+            // labelStaffName
+            // 
+            this.labelStaffName.AutoSize = true;
+            this.labelStaffName.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStaffName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelStaffName.Location = new System.Drawing.Point(165, 81);
+            this.labelStaffName.Name = "labelStaffName";
+            this.labelStaffName.Size = new System.Drawing.Size(168, 33);
+            this.labelStaffName.TabIndex = 20;
+            this.labelStaffName.Text = "시간 출력 부분 ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(12, 76);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(162, 39);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "접속 직원 : ";
+            // 
             // FormStoreStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1184, 861);
+            this.Controls.Add(this.labelStaffName);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
@@ -220,5 +246,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelStaffName;
+        private System.Windows.Forms.Label label6;
     }
 }
