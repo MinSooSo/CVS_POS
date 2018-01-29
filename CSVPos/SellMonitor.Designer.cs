@@ -64,8 +64,13 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.txtTakeMoney = new System.Windows.Forms.TextBox();
+=======
+            this.txtChange = new System.Windows.Forms.TextBox();
+            this.txtCash = new System.Windows.Forms.TextBox();
+>>>>>>> 953acf71e3990d27818ca962244183509afe0f2d
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -166,10 +171,12 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(5, 108);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(938, 420);
             this.dataGridView1.TabIndex = 17;
@@ -366,8 +373,13 @@
             this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.label15);
+<<<<<<< HEAD
             this.groupBox3.Controls.Add(this.textBox6);
             this.groupBox3.Controls.Add(this.txtTakeMoney);
+=======
+            this.groupBox3.Controls.Add(this.txtChange);
+            this.groupBox3.Controls.Add(this.txtCash);
+>>>>>>> 953acf71e3990d27818ca962244183509afe0f2d
             this.groupBox3.Controls.Add(this.txtPrice);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -457,19 +469,30 @@
             this.label15.TabIndex = 25;
             this.label15.Text = "결제 필요 금액";
             // 
-            // textBox6
+            // txtChange
             // 
-            this.textBox6.Location = new System.Drawing.Point(164, 221);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(296, 35);
-            this.textBox6.TabIndex = 27;
+            this.txtChange.Location = new System.Drawing.Point(164, 221);
+            this.txtChange.Name = "txtChange";
+            this.txtChange.Size = new System.Drawing.Size(296, 35);
+            this.txtChange.TabIndex = 27;
             // 
+<<<<<<< HEAD
             // txtTakeMoney
             // 
             this.txtTakeMoney.Location = new System.Drawing.Point(164, 161);
             this.txtTakeMoney.Name = "txtTakeMoney";
             this.txtTakeMoney.Size = new System.Drawing.Size(296, 35);
             this.txtTakeMoney.TabIndex = 26;
+=======
+            // txtCash
+            // 
+            this.txtCash.Location = new System.Drawing.Point(164, 161);
+            this.txtCash.Name = "txtCash";
+            this.txtCash.Size = new System.Drawing.Size(296, 35);
+            this.txtCash.TabIndex = 26;
+            this.txtCash.TextChanged += new System.EventHandler(this.txtCash_TextChanged);
+            this.txtCash.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBarcode_KeyPress);
+>>>>>>> 953acf71e3990d27818ca962244183509afe0f2d
             // 
             // txtPrice
             // 
@@ -561,6 +584,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtTime;
+
         private System.Windows.Forms.TextBox txtProduct;
         private System.Windows.Forms.TextBox txtBarcode;
         private System.Windows.Forms.Label label20;
@@ -571,6 +595,8 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox txtTakeMoney;
+        private System.Windows.Forms.TextBox txtChange;
+        private System.Windows.Forms.TextBox txtCash;
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
@@ -580,5 +606,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtEA;
         private System.Windows.Forms.Button btnGifti;
+        private System.Windows.Forms.TextBox txtProduct;
+        internal System.Windows.Forms.Button btnGifti;
     }
 }
