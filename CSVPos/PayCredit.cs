@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,7 +14,7 @@ namespace CSVPos
 {
     public partial class PayCredit : Form
     {
-<<<<<<< HEAD
+        private SqlConnection con;
         private string cardNum;
         private string cardCompanyName;
         // 카드 결제에 관한 클래스. 
@@ -26,9 +28,7 @@ namespace CSVPos
         //              그 이후 할인으로 15%를 받아서 850원을 내야 하는데 카드결제를 한다.
         //              근데 카드결제 시 할인이 10%가 된다고 하면 850원에서 85원을 빼야 함.그 알고리즘 생각.
         // 위의 시뮬레이션은 답이없다 .
-
-=======
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
+        
         public PayCredit()
         {
             InitializeComponent();
@@ -41,7 +41,6 @@ namespace CSVPos
 
         private void btnPay_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             // ==> 이번 프로젝트에서 바코드는 읽을 수 있지만 카드를 읽는것이 가능한가? (추후 수정)
             //MessageBox.Show(txtCardNum.Text);
 
@@ -85,42 +84,36 @@ namespace CSVPos
         private void SelectCard(string cardNumber)
         {
             //MessageBox.Show("카드 조회 프로시저 시작하세요");
-            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["CVS_POS"].ConnectionString))
+            con = Connection.GetInstance();
+            using (SqlCommand cmd = new SqlCommand("ss_CheckCardNum", con))
             {
-                using (SqlCommand cmd = new SqlCommand("ss_CheckCardNum", con))
+                con.Open();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@cardNum", cardNumber);
+
+                SqlDataReader sdr = cmd.ExecuteReader();
+                if (sdr.HasRows)
                 {
-                    con.Open();
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@cardNum", cardNumber);
-
-                    SqlDataReader sdr = cmd.ExecuteReader();
-                    if (sdr.HasRows)
+                    while (sdr.Read())
                     {
-                        while (sdr.Read())
-                        {
-                            //MessageBox.Show(sdr["CardNumber"].ToString() + " , " + sdr["CardCompanyName"].ToString());
-                            cardNum = sdr["CardNumber"].ToString();
-                            cardCompanyName = sdr["CardCompanyName"].ToString();
+                        //MessageBox.Show(sdr["CardNumber"].ToString() + " , " + sdr["CardCompanyName"].ToString());
+                        cardNum = sdr["CardNumber"].ToString();
+                        cardCompanyName = sdr["CardCompanyName"].ToString();
 
-                            MessageBox.Show(cardNum + " , " + cardCompanyName);
-                        }
-                        sdr.Close();
-                        con.Close();
+                        MessageBox.Show(cardNum + " , " + cardCompanyName);
                     }
-                    else
-                    {
-                        MessageBox.Show("등록되지 않은 카드입니다.");
+                    sdr.Close();
+                    con.Close();
+                }
+                else
+                {
+                    MessageBox.Show("등록되지 않은 카드입니다.");
 
-                        txtCardNum.Text = "";
-                        txtCardNum.Focus();
-                        sdr.Close();
-                    }
+                    txtCardNum.Text = "";
+                    txtCardNum.Focus();
+                    sdr.Close();
                 }
             }
-=======
-            MessageBox.Show("카드 정보가 일치합니다.");
-            this.Close();
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
         }
     }
 }

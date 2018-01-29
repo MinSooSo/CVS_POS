@@ -64,13 +64,8 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
             this.txtChange = new System.Windows.Forms.TextBox();
-            this.txtCash = new System.Windows.Forms.TextBox();
-=======
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.txtTakeMoney = new System.Windows.Forms.TextBox();
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -373,13 +368,8 @@
             this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.label15);
-<<<<<<< HEAD
             this.groupBox3.Controls.Add(this.txtChange);
-            this.groupBox3.Controls.Add(this.txtCash);
-=======
-            this.groupBox3.Controls.Add(this.textBox6);
             this.groupBox3.Controls.Add(this.txtTakeMoney);
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
             this.groupBox3.Controls.Add(this.txtPrice);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -476,23 +466,14 @@
             this.txtChange.Size = new System.Drawing.Size(296, 35);
             this.txtChange.TabIndex = 27;
             // 
-<<<<<<< HEAD
-            // txtCash
-            // 
-            this.txtCash.Location = new System.Drawing.Point(164, 161);
-            this.txtCash.Name = "txtCash";
-            this.txtCash.Size = new System.Drawing.Size(296, 35);
-            this.txtCash.TabIndex = 26;
-            this.txtCash.TextChanged += new System.EventHandler(this.txtCash_TextChanged);
-            this.txtCash.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBarcode_KeyPress);
-=======
             // txtTakeMoney
             // 
             this.txtTakeMoney.Location = new System.Drawing.Point(164, 161);
             this.txtTakeMoney.Name = "txtTakeMoney";
             this.txtTakeMoney.Size = new System.Drawing.Size(296, 35);
             this.txtTakeMoney.TabIndex = 26;
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
+            this.txtTakeMoney.TextChanged += new System.EventHandler(this.txtCash_TextChanged);
+            this.txtTakeMoney.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBarcode_KeyPress);
             // 
             // txtPrice
             // 
@@ -584,10 +565,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtTime;
-<<<<<<< HEAD
-=======
-        private System.Windows.Forms.TextBox txtProduct;
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
         private System.Windows.Forms.TextBox txtBarcode;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
@@ -595,13 +572,8 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
-<<<<<<< HEAD
         private System.Windows.Forms.TextBox txtChange;
-        private System.Windows.Forms.TextBox txtCash;
-=======
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox txtTakeMoney;
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
         private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
@@ -610,11 +582,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtEA;
-<<<<<<< HEAD
         private System.Windows.Forms.TextBox txtProduct;
         internal System.Windows.Forms.Button btnGifti;
-=======
-        private System.Windows.Forms.Button btnGifti;
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
     }
 }

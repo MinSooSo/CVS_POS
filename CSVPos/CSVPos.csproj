@@ -52,6 +52,11 @@
   <ItemGroup>
     <Compile Include="Connection.cs" />
     <Compile Include="CustomerAgeGender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerAgeGender.Designer.cs">
+      <DependentUpon>CustomerAgeGender.cs</DependentUpon>
+    </Compile>
     <Compile Include="checkLog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,11 +65,6 @@
     </Compile>
     <Compile Include="claBarcode.cs" />
     <Compile Include="claCodeData.cs" />
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CustomerAgeGender.Designer.cs">
-      <DependentUpon>CustomerAgeGender.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormBill.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,9 +177,9 @@
     </Compile>
     <EmbeddedResource Include="CustomerAgeGender.resx">
       <DependentUpon>CustomerAgeGender.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="checkLog.resx">
       <DependentUpon>checkLog.cs</DependentUpon>
-    </EmbeddedResource>
     </EmbeddedResource>
     <EmbeddedResource Include="FormBill.resx">
       <DependentUpon>FormBill.cs</DependentUpon>

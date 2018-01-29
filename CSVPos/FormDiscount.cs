@@ -64,21 +64,6 @@ namespace CSVPos
                 percentDC = (beforeDC * percentDC);
                 afterDC = beforeDC - (int)percentDC;
                 txtAfterDC.Text = afterDC.ToString();
-<<<<<<< HEAD
-=======
-                //try
-                //{
-
-                //}
-                //catch (InvalidOperationException)
-                //{
-                //    MessageBox.Show("유효한 번호가 아닙니다.");
-                //}
-                //finally
-                //{
-                //    con.Close();
-                //}
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
             }            
         }
 
@@ -89,7 +74,6 @@ namespace CSVPos
 
         public int SendPrice()
         {
-<<<<<<< HEAD
             #region 2018.01.22 수정 / 멤버십 입력 없을 때 적용하면 원가 들어가도록
             if (txtTelecom.Text == "")
             {
@@ -100,9 +84,6 @@ namespace CSVPos
                 return afterDC;
             } 
             #endregion
-=======
-            return afterDC;
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
         }
 
         private void txtTelecom_KeyPress(object sender, KeyPressEventArgs e)
@@ -127,59 +108,14 @@ namespace CSVPos
 
         private void btnApply_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             SellMonitor sm = (SellMonitor)Owner;
             sm.TeleDC = txtTelecom.Text;
             sm.btnGifti.Enabled = false;
 
-
-=======
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
+            
             SendPrice();
             SendPercent();
             this.Close();
         }
-<<<<<<< HEAD
-=======
-
-        //private void btnGiftiOn_Click(object sender, EventArgs e)
-        //{
-        //    // 누른 버튼이 무엇인지 가져와서
-        //    Button btn = (Button)sender;
-        //    //BtnOnOff(gboxGifti, btn);
-        //}
-
-        //private void btnTele_Click(object sender, EventArgs e)
-        //{
-        //    // 누른 버튼이 무엇인지 가져와서
-        //    Button btn = (Button)sender;
-        //    BtnOnOff(gboxTele, btn);
-        //}
-
-        ///// <summary>
-        ///// 버튼 눌렀을 때 다른 버튼들 비활성화 하는 메서드
-        ///// </summary>
-        ///// <param name="gbox">누른 버튼을 감싸고 있는 그룹박스</param>
-        ///// <param name="btn">누른 버튼</param>
-        //public void BtnOnOff(GroupBox gbox, Button btn)
-        //{
-        //    //MessageBox.Show(btn.Text);
-
-        //    // 기프티콘 사용여부 그룹박스의 버튼들 중에 누른 버튼을 제외한 버튼 Enable = false;
-        //    foreach (var item in gbox.Controls)
-        //    {
-        //        Button btns = (Button)item;
-        //        if (btns.Text == btn.Text)
-        //        {
-        //            btns.Enabled = false;
-        //        }
-        //        else
-        //        {
-        //            btns.Enabled = true;
-        //        }
-        //    }
-        //}
-
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
     }
 }

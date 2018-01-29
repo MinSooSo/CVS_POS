@@ -23,8 +23,4 @@ namespace CSVPos
             return sqlcon;
         }
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53

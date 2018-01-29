@@ -13,7 +13,6 @@ namespace CSVPos
 {
     public partial class SellMonitor : Form
     {
-<<<<<<< HEAD
         /// <summary>
         /// 판매 완료 시 SellRecord에 기록되는 내용 중 변수로 있어야 할 것 
         /// 판매번호 : DB에서 Select 해온 후 +1 (첫번째 판매의 경우 생각해봐야함)
@@ -57,23 +56,14 @@ namespace CSVPos
             get { return teleDC; }
             set { teleDC = value; }
         }
-=======
         private string empNum;
         private string empName;
-        private SqlConnection con;
-        private DataTable products;
-        private int proNum = 1;
-        private int eaCount = 1;
-        private bool newProduct = false;
-        int allPrice = 0;
 
 
         string afterDC;
-        FormDiscount fd;
 
         public string EmpNum { get => empNum; set => empNum = value; }
         public string EmpName { get => empName; set => empName = value; }
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
 
         public SellMonitor()
         {
@@ -84,12 +74,9 @@ namespace CSVPos
         {
             timeStart();
             label4.Text = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-
-<<<<<<< HEAD
-=======
+            
             label11.Text = EmpName;
             label12.Text = EmpNum;
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
             MakeTable();
 
         }
@@ -98,24 +85,18 @@ namespace CSVPos
         {
             products = new DataTable();
             products.Columns.Add("NO");
-<<<<<<< HEAD
             products.Columns.Add("바코드");
-=======
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
             products.Columns.Add("상품명");
             products.Columns.Add("단가", typeof(int));
             products.Columns.Add("수량", typeof(int));
             products.Columns.Add("금액", typeof(double));
             products.Columns.Add("할인");
-<<<<<<< HEAD
             products.Columns.Add("비고");
            
             dataGridView1.DataSource = products;
             dataGridView1.Columns["바코드"].Visible = false;
-=======
 
             dataGridView1.DataSource = products;
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
         }
 
         public void timeStart()
@@ -146,12 +127,7 @@ namespace CSVPos
             this.Close();
           
         }
-
-<<<<<<< HEAD
-        private void btnExit_Click(object sender, EventArgs e) // 판매 완료를 눌렀을 때 (현금 결제 버튼으로 바뀜)
-=======
         private void btnExit_Click(object sender, EventArgs e) // 판매 완료를 눌렀을 때
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
         {
             buyCash = true;
             // datagidview랑 각종 textbox 지우세요. datasource 등등
@@ -182,12 +158,8 @@ namespace CSVPos
             cas.btn40M.Click += Btn_Click;
             cas.btn50Fm.Click += Btn_Click;
             cas.btn50M.Click += Btn_Click;
-
-<<<<<<< HEAD
-=======
+            
             // 객층 선택 키 숨겨둠 ==> 카드 결제, 기프티콘 결제 이후에 작동 2018.01.16
-            CustomerAgeSex cas = new CustomerAgeSex();
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
             cas.ShowDialog();
 
             if (txtTakeMoney.Text == "")
@@ -256,13 +228,13 @@ namespace CSVPos
             {
                 if (buyCash)
                 {
-                    if (txtCash.Text == "")
+                    if (txtTakeMoney.Text == "")
                     {
                         InsertSellRecord("False", age, gender, txtPrice.Text); // 현금결제라는 뜻
                     }
                     else
                     {
-                        InsertSellRecord("False", age, gender, txtCash.Text); // 현금결제라는 뜻
+                        InsertSellRecord("False", age, gender, txtTakeMoney.Text); // 현금결제라는 뜻
                     }
                     
                     InsertSellProduct(); // 영수증을 위해 만든 테이블에 row insert
@@ -437,7 +409,6 @@ namespace CSVPos
         {
             // 폼 사이의 데이터 이동을 위해 전역변수로 선언. 2018.01.19
             fd = new FormDiscount();
-<<<<<<< HEAD
             fd.Owner = this;
 
             fd.txtBeforeDC.Text = allPrice.ToString();
@@ -445,15 +416,6 @@ namespace CSVPos
             txtDiscount.Text = fd.SendPercent().ToString(); // 할인받은 금액
 
             fd.ShowDialog();
-            
-=======
-
-            fd.txtBeforeDC.Text = allPrice.ToString();
-            fd.ShowDialog();
-
-            txtPrice.Text = fd.SendPrice().ToString();
-            txtDiscount.Text = fd.SendPercent().ToString();
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
         }
 
         private void btnCredit_Click(object sender, EventArgs e) // 카드 결제를 눌렀을 때
@@ -485,7 +447,6 @@ namespace CSVPos
 
         private void btnGifti_Click(object sender, EventArgs e) // 기프티콘 결제 버튼을 눌렀을 때
         {
-<<<<<<< HEAD
             fg = new FormGifti();
 
             fg.btnGifticonUse.Click += BtnGifticonUse_Click;
@@ -578,25 +539,11 @@ namespace CSVPos
                 con = Connection.GetInstance();
                 // 발주 테이블에서 맞는 바코드가 있으면 모든 정보를 출력해주는 저장프로시저
                 //MessageBox.Show("바코드 입력 cmd 실행 전" + con.ConnectionString);
-=======
-            //FormGifti fg = new FormGifti();
-            //fg.ShowDialog();
-        }
-
-        private void txtBarcode_TextChanged(object sender, EventArgs e)
-        {            
-            if (txtBarcode.Text.Length == 8 || txtBarcode.Text.Length == 13)
-            {
-                con = Connection.GetInstance();
-                
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
                 using (SqlCommand cmd = new SqlCommand("ms_SelectStock", con))
                 {
                     con.Open();
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@barcode", txtBarcode.Text);
-<<<<<<< HEAD
-
 
                     SqlDataReader sdr = cmd.ExecuteReader();
                     if (sdr.HasRows)
@@ -605,24 +552,12 @@ namespace CSVPos
                         {
                             MakeRows(proNum, sdr["barCode"].ToString(), sdr["PS_productName"].ToString(), sdr["PS_sellPrice"].ToString(), sdr["PS_warehousingDay"].ToString());
                             //gifti = sdr["PS_event"].ToString(); // 기프티콘 여부 조회? (DB랑 비교 2018.01.19.01:32)
-=======
-                    
-                    SqlDataReader sdr = cmd.ExecuteReader();
-
-                    if (sdr.HasRows)
-                    {
-                        while (sdr.Read())
-                        {                            
-                            MakeRows(proNum, sdr["PS_productName"].ToString(), sdr["PS_sellPrice"].ToString());
-
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
                             txtBarcode.Text = "";
                             txtBarcode.Focus();
                         }
                     }
                 }
                 con.Close();
-<<<<<<< HEAD
             }
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = products;
@@ -641,23 +576,6 @@ namespace CSVPos
                 products.Rows.Add(newRow);
                 newRow["NO"] = proNum;
                 newRow["바코드"] = barcode;
-=======
-               
-            }
-            dataGridView1.DataSource = null;
-            dataGridView1.DataSource = products;            
-        }
-
-        private void MakeRows(int proNum, string name, string price)
-        {
-            if (products.Rows.Count == 0) // 바코드를 처음 찍을 때
-            {
-                eaCount = 1;
-               
-                DataRow newRow = products.NewRow();
-                products.Rows.Add(newRow);
-                newRow["NO"] = proNum;
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
                 newRow["상품명"] = name;
                 newRow["단가"] = price;
                 newRow["수량"] = eaCount;
@@ -668,15 +586,11 @@ namespace CSVPos
                 txtEA.Text = eaCount.ToString();
                 allPrice = int.Parse(price);
                 txtPrice.Text = allPrice.ToString();
-<<<<<<< HEAD
                 txtTime.Text = day;
-=======
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
             }
             else // 이미 찍힌 바코드가 있을 때
             {
                 proNum++;
-<<<<<<< HEAD
                 foreach (DataRow row in products.Rows)
                 {
                     //MessageBox.Show("행 추가하기 전 row : " + products.Rows.Count);
@@ -694,29 +608,10 @@ namespace CSVPos
                         eaCount++;// 수량 증가를 위한 전역변수 값 증가
                         row["수량"] = eaCount;                  
                         row["금액"] = eaCount * int.Parse(price);
-
-=======
-                
-                foreach (DataRow row in products.Rows)
-                {
-                   
-                    if (row["상품명"].ToString() != name)
-                    {
-                        newProduct = true;
-                    }
-                    else 
-                    {
-                        newProduct = false;                        
-                        eaCount = int.Parse(row["수량"].ToString()); 
-                        eaCount++;
-                        row["수량"] = eaCount;                  
-                        row["금액"] = eaCount * int.Parse(price);
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
                         txtProduct.Text = name;
                         txtEA.Text = eaCount.ToString();
                         allPrice += (int)row["단가"];
                         txtPrice.Text = allPrice.ToString();
-<<<<<<< HEAD
                         txtTime.Text = day;
                         return;
                     }
@@ -731,19 +626,6 @@ namespace CSVPos
                     products.Rows.Add(newRow);
                     newRow["NO"] = proNum;
                     newRow["바코드"] = barcode;
-=======
-                        return;
-                    }
-                }
-                   
-                if (newProduct)
-                {
-                    eaCount = 1;
-                    
-                    DataRow newRow = products.NewRow();
-                    products.Rows.Add(newRow);
-                    newRow["NO"] = proNum;
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
                     newRow["상품명"] = name;
                     newRow["단가"] = price;
                     newRow["수량"] = eaCount;
@@ -753,35 +635,23 @@ namespace CSVPos
                     txtProduct.Text = name;
                     txtEA.Text = eaCount.ToString();
                     allPrice += int.Parse(price);
-<<<<<<< HEAD
                     txtPrice.Text = allPrice.ToString();
                     txtTime.Text = day;
-=======
-                    txtPrice.Text = allPrice.ToString();                    
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
                 }
             }
         }
 
         private void txtBarcode_KeyPress(object sender, KeyPressEventArgs e)
         {
-<<<<<<< HEAD
             if (!(Char.IsDigit(e.KeyChar) || e.KeyChar == Convert.ToChar(Keys.Back)))
             {
                 e.Handled = true;
             }
-=======
-            //if (!(Char.IsDigit(e.KeyChar) || e.KeyChar == Convert.ToChar(Keys.Back)))
-            //{
-            //    e.Handled = true;
-            //}
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
         }
 
         private void txtBarcode_Click(object sender, EventArgs e)
         {
             txtBarcode.Text = "";
-<<<<<<< HEAD
             //txtProduct.Text = "";
             //txtTime.Text = "";
             //txtEA.Text = "";
@@ -790,24 +660,15 @@ namespace CSVPos
 
         private void txtCash_TextChanged(object sender, EventArgs e)
         {
-            if (txtCash.Text != "") // 안에 값이 채워져있을때에만 실행
+            if (txtTakeMoney.Text != "") // 안에 값이 채워져있을때에만 실행
             {
-                int change = int.Parse(txtPrice.Text) - int.Parse(txtCash.Text);
+                int change = int.Parse(txtPrice.Text) - int.Parse(txtTakeMoney.Text);
                 txtChange.Text = Math.Abs(change).ToString();
             }
             else
             {
                 txtChange.Text = "";
             }
-=======
-          
-        }
-
-        private void txtPrice_TextChanged(object sender, EventArgs e)
-        {
-            //int calcPrice = int.Parse(txtPrice.Text) - int.Parse(txtDiscount.Text);
-            //txtTakeMoney.Text = calcPrice.ToString();
->>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
         }
     }
 }
