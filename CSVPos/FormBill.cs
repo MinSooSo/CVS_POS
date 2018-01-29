@@ -1,13 +1,9 @@
 ﻿using Barcode128;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CSVPos
@@ -33,6 +29,7 @@ namespace CSVPos
         private int totalStock = 0;
         private int customerCharge = 0;
         private int rechargeMoney = 0;
+        private string discountTelecomCardNum;
         SortedList<int, int> priceList = new SortedList<int, int>();
         SortedList<int, string> stockList = new SortedList<int, string>();
         SortedList<int, int> customerChargeList = new SortedList<int, int>();
@@ -102,14 +99,16 @@ namespace CSVPos
 
             txtBillPreview.Text = "";
 
-            int test = dataGridView1.SelectedCells[0].RowIndex + 1;
+            string test = dataGridView1.CurrentRow.Cells[0].Value.ToString();
 
             con = Connection.GetInstance();
 
             using (SqlCommand cmd = new SqlCommand("ms_selectSellRecord_All", con))
             {
                 MakeTxtBasicForm();
+
                 con.Open();
+
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.AddWithValue("@snum", test);
@@ -122,7 +121,34 @@ namespace CSVPos
                     while (sdr.Read())
                     {
                         txtBillPreview.Text += "\r\n";
-                        txtBillPreview.Text += " " + sdr["S_productName"].ToString() + "\t\t          ";
+                        // 상품의 길이가 긴 것들로 인하여 영수증의 폼이 해치게 됨, 최대 4글자로 자르는 과정이 필요하다고 판단.
+                        char[] cutString = sdr["S_productName"].ToString().ToCharArray(0, sdr["S_productName"].ToString().Length);
+                        string cutting = "";
+
+                        for (int i = 0; i < cutString.Length; i++)
+                        {
+                            if (i == 0)
+                            {
+                                cutting += cutString[i];
+                            }
+                            else if (i == cutString.Length-1)
+                            {
+                                cutting += cutString[i];
+                            }
+                            else if (i % 4 == 0)
+                            {
+                                cutting += cutString[i] + "\r\n"; 
+                            }
+                            else
+                            {
+                                cutting += cutString[i];
+                            }
+                            //cutting += cutString[i];
+                        }
+
+
+                        //txtBillPreview.Text += " " + sdr["S_productName"].ToString() + "\t\t          ";
+                        txtBillPreview.Text += " " + cutting + "\t\t          ";
                         txtBillPreview.Text += sdr["S_amount"].ToString() + "\t\t\t";
                         txtBillPreview.Text += sdr["S_sellPrice"].ToString() + "\t";
 
@@ -211,17 +237,28 @@ namespace CSVPos
             if (discount == "할인 적용")
             {
                 txtBillPreview.Text += "********************  할 인 정 보   *********************\t\r\n\r\n";
-
-                using (SqlCommand cmd2 = new SqlCommand("ms_insertBillCardInfo", con))
+                // 할인 정보를 가지고 와야합니다.
+                // 할인 정보를 가지고 올 수 있는 프로시저를 만들고 거기서 원하는 값을 뽑아야 합니다. 
+                using (SqlCommand cmd2 = new SqlCommand("ms_selectDiscountInfo", con))
                 {
                     con.Open();
 
+                    cmd2.CommandType = CommandType.StoredProcedure;
+                    cmd2.Parameters.AddWithValue("@teleDiscountNum", discountTelecomCardNum);
 
+                    SqlDataReader check = cmd2.ExecuteReader();
+                    if (check.HasRows)
+                    {
+                        while (check.Read())
+                        {
+                            txtBillPreview.Text += " 카드 번호 : " + check["MembershipNum"].ToString() + "\r\n";
+                            txtBillPreview.Text += " 카드 회사 : " + check["Tgrade"].ToString() + "\t\t\t\r\n";
+                            txtBillPreview.Text += " 할인 율 : " + check["Tdiscount"].ToString() + "%\r\n\r\n";
+                        }
+                    }
+
+                    con.Close();
                 }
-            }
-            else if (discount == "할인 미적용" || discount == "사용 불가")
-            {
-                return;
             }
 
             if (buyWay == "카드 결제")
@@ -322,10 +359,11 @@ namespace CSVPos
                 newRow["결제 방법"] = "카드 결제";
 
                 newRow["기프티콘 여부"] = "사용 불가";
-                
-                if(discount == "True")
+
+                if (discount != "")
                 {
                     newRow["할인 여부"] = "할인 적용";
+                    discountTelecomCardNum = discount;
                 }
                 else
                 {
@@ -349,14 +387,14 @@ namespace CSVPos
                     {
                         newRow["할인 여부"] = "할인 적용";
                     }
-                    else if(discount == null)
+                    else if (discount == null)
                     {
                         newRow["할인 여부"] = "할인 미적용";
                     }
                 }
             }
         }
-        
+
 
         private void MakeTxtBasicForm()
         {
@@ -366,7 +404,7 @@ namespace CSVPos
 
             // bitmap graphics 지원함. 
 
-            pic.Image = new Bitmap(@"C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\mainTitle.PNG");
+            pic.Image = new Bitmap(@"C:\Users\news2\OneDrive\문서\CVS_POS\CSVPos\mainTitle.PNG");
             txtBillPreview.Controls.Add(pic);
 
             txtBillPreview.Text += "\r\n\r\n\r\n\r\n\r\n";
@@ -421,7 +459,7 @@ namespace CSVPos
                         txtBillPreview.Text += sdr["pos_num"].ToString() + "\t\t";
                         txtBillPreview.Text += DateTime.Now.ToString("yyyy/MM/dd").ToString() + "(" + DateTime.Now.Date.ToString("ddd") + ")\t\t";
 
-                        txtBillPreview.Text += sdr["pos_nickname"].ToString() + "\r\n";
+                        txtBillPreview.Text += sdr["pos_nickname"].ToString() + "\r\n\r\n";
                     }
                 }
                 con.Close();
@@ -482,7 +520,7 @@ namespace CSVPos
             // 바데이터를 생성 -> 그래픽으로 제작하는 메서드 
             int intW = 1;
 
-            Graphics graphics = pictureBox1.CreateGraphics();            
+            Graphics graphics = pictureBox1.CreateGraphics();
 
             // 펜 색 지정해주기, 흰색 , 검은색 
             Pen BlackPen = new Pen(Color.Black, intW);
@@ -506,17 +544,6 @@ namespace CSVPos
                     graphics.DrawLine(WhitePen, 30 + (i * intW), 10, 30 + (i * intW), 60);
                 }
             }
-
-            // 바코드 텍스트 박스 안에 해주셈 
-
-            //PictureBox pic2 = new PictureBox();
-
-            //pic2.Width = 333;
-            //pic2.Height = 60;
-            //pic2.Image = new Bitmap()
-            //textBox1.Controls.Add(pic2);
-
-            //pic2.Show();
 
             txtBarcodeBefore.Text = txtBarcodeAfter.Text = txtBillBarCode.Text = "";
         }
