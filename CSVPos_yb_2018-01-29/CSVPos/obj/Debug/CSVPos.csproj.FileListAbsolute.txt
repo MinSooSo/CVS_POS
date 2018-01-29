@@ -1,0 +1,170 @@
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\bin\Debug\CSVPos.exe.config
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\bin\Debug\CSVPos.exe
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\bin\Debug\CSVPos.pdb
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.csprojResolveAssemblyReference.cache
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.Properties.Resources.resources
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.csproj.GenerateResource.Cache
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.csproj.CoreCompileInputs.cache
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.exe
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.pdb
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.MainForm.resources
+c:\users\minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.StaffNum.resources
+C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.StoreM.resources
+C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.StaffM.resources
+C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.HelpInfo.resources
+C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.SellMonitor.resources
+C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.frmPost.resources
+C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.CustomerAgeSex.resources
+C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.FormDiscount.resources
+C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.PayCredit.resources
+C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.FormBill.resources
+C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.FormHire.resources
+C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.FormPayment.resources
+C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.FormStoreInfo.resources
+C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.FormSalesInfo.resources
+C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.FormStoreStock.resources
+C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.FormProductOrder.resources
+C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.FormStockDisposal.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\bin\Debug\CSVPos.exe.config
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\bin\Debug\CSVPos.exe
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\bin\Debug\CSVPos.pdb
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.csprojResolveAssemblyReference.cache
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.CustomerAgeSex.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.FormBill.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.FormDiscount.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.FormHire.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.FormPayment.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.FormProductOrder.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.FormSalesInfo.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.FormStockDisposal.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.FormStoreInfo.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.FormStoreStock.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.frmPost.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.HelpInfo.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.MainForm.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.PayCredit.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.Properties.Resources.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.SellMonitor.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.StaffM.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.StaffNum.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.StoreM.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.csproj.GenerateResource.Cache
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.csproj.CoreCompileInputs.cache
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.exe
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos\CSVPos\obj\Debug\CSVPos.pdb
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\bin\Debug\CSVPos.exe.config
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\bin\Debug\CSVPos.exe
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\bin\Debug\CSVPos.pdb
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.csprojResolveAssemblyReference.cache
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.CustomerAgeSex.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.FormBill.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.FormDiscount.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.FormHire.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.FormPayment.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.FormProductOrder.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.FormSalesInfo.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.FormStockDisposal.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.FormStoreInfo.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.FormStoreStock.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.frmPost.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.HelpInfo.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.MainForm.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.PayCredit.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.Properties.Resources.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.SellMonitor.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.StaffM.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.StaffNum.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.StoreM.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.csproj.GenerateResource.Cache
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.csproj.CoreCompileInputs.cache
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.exe
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.pdb
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\bin\Debug\CSVPos.exe.config
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\bin\Debug\CSVPos.exe
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\bin\Debug\CSVPos.pdb
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.csprojResolveAssemblyReference.cache
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.CustomerAgeSex.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.FormBill.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.FormDiscount.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.FormHire.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.FormPayment.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.FormProductOrder.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.FormSalesInfo.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.FormStockDisposal.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.FormStoreInfo.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.FormStoreStock.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.frmPost.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.HelpInfo.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.MainForm.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.PayCredit.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.Properties.Resources.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.SellMonitor.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.StaffM.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.StaffNum.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.StoreM.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.csproj.GenerateResource.Cache
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.csproj.CoreCompileInputs.cache
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.exe
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_최초받은것_20180110작업본\CSVPos\obj\Debug\CSVPos.pdb
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\bin\Debug\CSVPos.exe.config
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\bin\Debug\CSVPos.exe
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\bin\Debug\CSVPos.pdb
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.csprojResolveAssemblyReference.cache
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.CustomerAgeSex.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.FormBill.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.FormDiscount.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.FormHire.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.FormPayment.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.FormProductOrder.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.FormSalesInfo.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.FormStockDisposal.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.FormStoreInfo.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.FormStoreStock.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.frmPost.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.HelpInfo.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.MainForm.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.PayCredit.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.Properties.Resources.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.SellMonitor.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.StaffM.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.StaffNum.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.StoreM.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.csproj.GenerateResource.Cache
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.csproj.CoreCompileInputs.cache
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.exe
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.pdb
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.staffWorkTimeTalbe.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.InputPay.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\bin\Debug\CSVPos.exe.config
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\bin\Debug\CSVPos.exe
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\bin\Debug\CSVPos.pdb
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.csprojResolveAssemblyReference.cache
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.CustomerAgeSex.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.FormBill.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.FormDiscount.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.FormHire.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.FormPayment.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.FormProductOrder.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.FormSalesInfo.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.FormStockDisposal.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.FormStoreInfo.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.FormStoreStock.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.frmPost.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.HelpInfo.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.InputPay.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.MainForm.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.PayCredit.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.Properties.Resources.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.SellMonitor.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.StaffM.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.StaffNum.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.staffWorkTimeTalbe.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.StoreM.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.csproj.GenerateResource.Cache
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.csproj.CoreCompileInputs.cache
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.exe
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.pdb
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.UpdatePay.resources
+C:\C_sharp\WindowForms\CSVpos_project\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.ViewEmpInfo.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.UpdatePay.resources
+D:\응용SW개발자 양성과정\과정6\windowFormProject\CSVPos_20180110작업본\CSVPos\obj\Debug\CSVPos.ViewEmpInfo.resources
