@@ -38,12 +38,8 @@
             this.btnProAdd = new System.Windows.Forms.Button();
             this.btnOutput = new System.Windows.Forms.Button();
             this.btnProDel = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.cboOrderUnit = new System.Windows.Forms.ComboBox();
             this.txtordernum = new System.Windows.Forms.TextBox();
-            this.cboCashCard = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Supplier)).BeginInit();
@@ -79,6 +75,7 @@
             this.dgv_Order.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Order.Location = new System.Drawing.Point(12, 503);
             this.dgv_Order.Name = "dgv_Order";
+            this.dgv_Order.ReadOnly = true;
             this.dgv_Order.RowTemplate.Height = 23;
             this.dgv_Order.Size = new System.Drawing.Size(860, 259);
             this.dgv_Order.TabIndex = 46;
@@ -127,7 +124,7 @@
             this.btnProductOrder.Name = "btnProductOrder";
             this.btnProductOrder.Size = new System.Drawing.Size(205, 94);
             this.btnProductOrder.TabIndex = 13;
-            this.btnProductOrder.Text = "발주 ";
+            this.btnProductOrder.Text = "발주 신청";
             this.btnProductOrder.UseVisualStyleBackColor = true;
             this.btnProductOrder.Click += new System.EventHandler(this.btnProductOrder_Click);
             // 
@@ -149,8 +146,9 @@
             this.btnOutput.Name = "btnOutput";
             this.btnOutput.Size = new System.Drawing.Size(205, 94);
             this.btnOutput.TabIndex = 12;
-            this.btnOutput.Text = "발주 목록 조회";
+            this.btnOutput.Text = "현 발주 신청 조회";
             this.btnOutput.UseVisualStyleBackColor = true;
+            this.btnOutput.Click += new System.EventHandler(this.btnOutput_Click);
             // 
             // btnProDel
             // 
@@ -159,20 +157,9 @@
             this.btnProDel.Name = "btnProDel";
             this.btnProDel.Size = new System.Drawing.Size(205, 94);
             this.btnProDel.TabIndex = 2;
-            this.btnProDel.Text = "발주 상품 삭제";
+            this.btnProDel.Text = "목록에서 상품 제거";
             this.btnProDel.UseVisualStyleBackColor = true;
             this.btnProDel.Click += new System.EventHandler(this.btnProDel_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(401, 421);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(101, 26);
-            this.label4.TabIndex = 53;
-            this.label4.Text = "주문 단위 :";
             // 
             // label5
             // 
@@ -185,18 +172,6 @@
             this.label5.TabIndex = 54;
             this.label5.Text = "주문 수량 :";
             // 
-            // cboOrderUnit
-            // 
-            this.cboOrderUnit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboOrderUnit.FormattingEnabled = true;
-            this.cboOrderUnit.Items.AddRange(new object[] {
-            "BOX",
-            "EA"});
-            this.cboOrderUnit.Location = new System.Drawing.Point(504, 425);
-            this.cboOrderUnit.Name = "cboOrderUnit";
-            this.cboOrderUnit.Size = new System.Drawing.Size(106, 20);
-            this.cboOrderUnit.TabIndex = 55;
-            // 
             // txtordernum
             // 
             this.txtordernum.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -206,30 +181,6 @@
             this.txtordernum.TabIndex = 56;
             this.txtordernum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtordernum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtordernum_KeyPress);
-            // 
-            // cboCashCard
-            // 
-            this.cboCashCard.BackColor = System.Drawing.Color.White;
-            this.cboCashCard.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboCashCard.FormattingEnabled = true;
-            this.cboCashCard.Items.AddRange(new object[] {
-            "카드",
-            "현금"});
-            this.cboCashCard.Location = new System.Drawing.Point(745, 467);
-            this.cboCashCard.Name = "cboCashCard";
-            this.cboCashCard.Size = new System.Drawing.Size(106, 20);
-            this.cboCashCard.TabIndex = 58;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(642, 463);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 26);
-            this.label6.TabIndex = 57;
-            this.label6.Text = "결제 수단 :";
             // 
             // label8
             // 
@@ -260,12 +211,8 @@
             this.ClientSize = new System.Drawing.Size(1134, 773);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.cboCashCard);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.txtordernum);
-            this.Controls.Add(this.cboOrderUnit);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -293,16 +240,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnProAdd;
-        private System.Windows.Forms.Button btnOutput;
         private System.Windows.Forms.Button btnProDel;
         private System.Windows.Forms.Button btnProductOrder;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cboOrderUnit;
         private System.Windows.Forms.TextBox txtordernum;
-        private System.Windows.Forms.ComboBox cboCashCard;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnOutput;
     }
 }
