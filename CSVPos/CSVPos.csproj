@@ -49,11 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerAgeSex.cs">
+    <Compile Include="Connection.cs" />
+    <Compile Include="CustomerAgeGender.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomerAgeSex.Designer.cs">
-      <DependentUpon>CustomerAgeSex.cs</DependentUpon>
+    <Compile Include="CustomerAgeGender.Designer.cs">
+      <DependentUpon>CustomerAgeGender.cs</DependentUpon>
     </Compile>
     <Compile Include="FormBill.cs">
       <SubType>Form</SubType>
@@ -66,6 +67,12 @@
     </Compile>
     <Compile Include="FormDiscount.Designer.cs">
       <DependentUpon>FormDiscount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGifti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGifti.Designer.cs">
+      <DependentUpon>FormGifti.cs</DependentUpon>
     </Compile>
     <Compile Include="FormHire.cs">
       <SubType>Form</SubType>
@@ -159,14 +166,17 @@
     <Compile Include="StoreM.Designer.cs">
       <DependentUpon>StoreM.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CustomerAgeSex.resx">
-      <DependentUpon>CustomerAgeSex.cs</DependentUpon>
+    <EmbeddedResource Include="CustomerAgeGender.resx">
+      <DependentUpon>CustomerAgeGender.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormBill.resx">
       <DependentUpon>FormBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDiscount.resx">
       <DependentUpon>FormDiscount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGifti.resx">
+      <DependentUpon>FormGifti.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormHire.resx">
       <DependentUpon>FormHire.cs</DependentUpon>

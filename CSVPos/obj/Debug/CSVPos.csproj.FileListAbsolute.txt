@@ -29,7 +29,6 @@ C:\CSharp\Winform\CSVPos\CSVPos\bin\Debug\CSVPos.exe.config
 C:\CSharp\Winform\CSVPos\CSVPos\bin\Debug\CSVPos.exe
 C:\CSharp\Winform\CSVPos\CSVPos\bin\Debug\CSVPos.pdb
 C:\CSharp\Winform\CSVPos\CSVPos\obj\Debug\CSVPos.csprojResolveAssemblyReference.cache
-C:\CSharp\Winform\CSVPos\CSVPos\obj\Debug\CSVPos.CustomerAgeSex.resources
 C:\CSharp\Winform\CSVPos\CSVPos\obj\Debug\CSVPos.FormBill.resources
 C:\CSharp\Winform\CSVPos\CSVPos\obj\Debug\CSVPos.FormDiscount.resources
 C:\CSharp\Winform\CSVPos\CSVPos\obj\Debug\CSVPos.FormHire.resources
@@ -52,3 +51,5 @@ C:\CSharp\Winform\CSVPos\CSVPos\obj\Debug\CSVPos.csproj.GenerateResource.Cache
 C:\CSharp\Winform\CSVPos\CSVPos\obj\Debug\CSVPos.csproj.CoreCompileInputs.cache
 C:\CSharp\Winform\CSVPos\CSVPos\obj\Debug\CSVPos.exe
 C:\CSharp\Winform\CSVPos\CSVPos\obj\Debug\CSVPos.pdb
+C:\CSharp\Winform\CSVPos\CSVPos\obj\Debug\CSVPos.FormGifti.resources
+C:\CSharp\Winform\CSVPos\CSVPos\obj\Debug\CSVPos.CustomerAgeGender.resources

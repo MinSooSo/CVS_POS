@@ -38,6 +38,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnGifti = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnBill = new System.Windows.Forms.Button();
             this.btnCredit = new System.Windows.Forms.Button();
@@ -46,26 +47,26 @@
             this.btnTakbae = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtEA = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTime = new System.Windows.Forms.TextBox();
+            this.txtProduct = new System.Windows.Forms.TextBox();
+            this.txtBarcode = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtDiscount = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtChange = new System.Windows.Forms.TextBox();
+            this.txtCash = new System.Windows.Forms.TextBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -165,16 +166,19 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(5, 108);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(938, 420);
             this.dataGridView1.TabIndex = 17;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnGifti);
             this.groupBox1.Controls.Add(this.btnExit);
             this.groupBox1.Controls.Add(this.btnBill);
             this.groupBox1.Controls.Add(this.btnCredit);
@@ -190,6 +194,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "선택가능 기능";
             // 
+            // btnGifti
+            // 
+            this.btnGifti.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGifti.Location = new System.Drawing.Point(6, 203);
+            this.btnGifti.Name = "btnGifti";
+            this.btnGifti.Size = new System.Drawing.Size(221, 55);
+            this.btnGifti.TabIndex = 8;
+            this.btnGifti.Text = "기프티콘 결제";
+            this.btnGifti.UseVisualStyleBackColor = true;
+            this.btnGifti.Click += new System.EventHandler(this.btnGifti_Click);
+            // 
             // btnExit
             // 
             this.btnExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -197,7 +212,7 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(221, 112);
             this.btnExit.TabIndex = 7;
-            this.btnExit.Text = "판매 완료";
+            this.btnExit.Text = "현금 결제";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -239,9 +254,9 @@
             this.btnDiscount.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDiscount.Location = new System.Drawing.Point(6, 147);
             this.btnDiscount.Name = "btnDiscount";
-            this.btnDiscount.Size = new System.Drawing.Size(221, 112);
+            this.btnDiscount.Size = new System.Drawing.Size(221, 55);
             this.btnDiscount.TabIndex = 3;
-            this.btnDiscount.Text = "할인 적용\r\n기프티콘 적용";
+            this.btnDiscount.Text = "할인 적용";
             this.btnDiscount.UseVisualStyleBackColor = true;
             this.btnDiscount.Click += new System.EventHandler(this.btnDiscount_Click);
             // 
@@ -259,13 +274,13 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Controls.Add(this.txtEA);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txtTime);
+            this.groupBox2.Controls.Add(this.txtProduct);
+            this.groupBox2.Controls.Add(this.txtBarcode);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox2.Location = new System.Drawing.Point(5, 528);
@@ -284,12 +299,12 @@
             this.label3.TabIndex = 26;
             this.label3.Text = "수 량";
             // 
-            // textBox8
+            // txtEA
             // 
-            this.textBox8.Location = new System.Drawing.Point(128, 219);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(296, 35);
-            this.textBox8.TabIndex = 25;
+            this.txtEA.Location = new System.Drawing.Point(128, 219);
+            this.txtEA.Name = "txtEA";
+            this.txtEA.Size = new System.Drawing.Size(296, 35);
+            this.txtEA.TabIndex = 25;
             // 
             // label14
             // 
@@ -318,41 +333,44 @@
             this.label10.TabIndex = 22;
             this.label10.Text = "상품 바코드";
             // 
-            // textBox3
+            // txtTime
             // 
-            this.textBox3.Location = new System.Drawing.Point(128, 165);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(296, 35);
-            this.textBox3.TabIndex = 2;
+            this.txtTime.Location = new System.Drawing.Point(128, 165);
+            this.txtTime.Name = "txtTime";
+            this.txtTime.Size = new System.Drawing.Size(296, 35);
+            this.txtTime.TabIndex = 2;
             // 
-            // textBox2
+            // txtProduct
             // 
-            this.textBox2.Location = new System.Drawing.Point(128, 104);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(296, 35);
-            this.textBox2.TabIndex = 1;
+            this.txtProduct.Location = new System.Drawing.Point(128, 104);
+            this.txtProduct.Name = "txtProduct";
+            this.txtProduct.Size = new System.Drawing.Size(296, 35);
+            this.txtProduct.TabIndex = 1;
             // 
-            // textBox1
+            // txtBarcode
             // 
-            this.textBox1.Location = new System.Drawing.Point(128, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(296, 35);
-            this.textBox1.TabIndex = 0;
+            this.txtBarcode.Location = new System.Drawing.Point(128, 52);
+            this.txtBarcode.Name = "txtBarcode";
+            this.txtBarcode.Size = new System.Drawing.Size(296, 35);
+            this.txtBarcode.TabIndex = 0;
+            this.txtBarcode.Click += new System.EventHandler(this.txtBarcode_Click);
+            this.txtBarcode.TextChanged += new System.EventHandler(this.txtBarcode_TextChanged);
+            this.txtBarcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBarcode_KeyPress);
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label21);
             this.groupBox3.Controls.Add(this.label22);
-            this.groupBox3.Controls.Add(this.textBox7);
+            this.groupBox3.Controls.Add(this.txtDiscount);
             this.groupBox3.Controls.Add(this.label20);
             this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Controls.Add(this.label18);
             this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.textBox6);
-            this.groupBox3.Controls.Add(this.textBox5);
-            this.groupBox3.Controls.Add(this.textBox4);
+            this.groupBox3.Controls.Add(this.txtChange);
+            this.groupBox3.Controls.Add(this.txtCash);
+            this.groupBox3.Controls.Add(this.txtPrice);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox3.Location = new System.Drawing.Point(445, 527);
@@ -380,12 +398,12 @@
             this.label22.TabIndex = 33;
             this.label22.Text = "할인 받은 금액";
             // 
-            // textBox7
+            // txtDiscount
             // 
-            this.textBox7.Location = new System.Drawing.Point(163, 103);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(296, 35);
-            this.textBox7.TabIndex = 34;
+            this.txtDiscount.Location = new System.Drawing.Point(163, 103);
+            this.txtDiscount.Name = "txtDiscount";
+            this.txtDiscount.Size = new System.Drawing.Size(296, 35);
+            this.txtDiscount.TabIndex = 34;
             // 
             // label20
             // 
@@ -441,26 +459,28 @@
             this.label15.TabIndex = 25;
             this.label15.Text = "결제 필요 금액";
             // 
-            // textBox6
+            // txtChange
             // 
-            this.textBox6.Location = new System.Drawing.Point(164, 221);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(296, 35);
-            this.textBox6.TabIndex = 27;
+            this.txtChange.Location = new System.Drawing.Point(164, 221);
+            this.txtChange.Name = "txtChange";
+            this.txtChange.Size = new System.Drawing.Size(296, 35);
+            this.txtChange.TabIndex = 27;
             // 
-            // textBox5
+            // txtCash
             // 
-            this.textBox5.Location = new System.Drawing.Point(164, 161);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(296, 35);
-            this.textBox5.TabIndex = 26;
+            this.txtCash.Location = new System.Drawing.Point(164, 161);
+            this.txtCash.Name = "txtCash";
+            this.txtCash.Size = new System.Drawing.Size(296, 35);
+            this.txtCash.TabIndex = 26;
+            this.txtCash.TextChanged += new System.EventHandler(this.txtCash_TextChanged);
+            this.txtCash.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBarcode_KeyPress);
             // 
-            // textBox4
+            // txtPrice
             // 
-            this.textBox4.Location = new System.Drawing.Point(164, 47);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(296, 35);
-            this.textBox4.TabIndex = 25;
+            this.txtPrice.Location = new System.Drawing.Point(164, 47);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(296, 35);
+            this.txtPrice.TabIndex = 25;
             // 
             // label8
             // 
@@ -544,24 +564,25 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTime;
+        private System.Windows.Forms.TextBox txtBarcode;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtChange;
+        private System.Windows.Forms.TextBox txtCash;
+        private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtDiscount;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtEA;
+        private System.Windows.Forms.TextBox txtProduct;
+        internal System.Windows.Forms.Button btnGifti;
     }
 }

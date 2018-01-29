@@ -18,6 +18,7 @@ namespace CSVPos
         private string cardCompanyName;
         // 카드 결제에 관한 클래스. 
         // 카드 결제 5만원 이상일 시 사인 추가 예정
+        
         // 카드결제 : 카드번호만 받아서 DB연동 후 카드가 현재 있는 카드인지 없는카드인지 조회.
         //            결제를 누르면 판매 완료 버튼이 눌려야 함(mbox 띄워주면서 니가 결제를 누르면 자동으로 판매완료가 되므로, 
         //            할인 적용을 먼저 하라는 mbox를 띄워라)
@@ -25,7 +26,8 @@ namespace CSVPos
         // 시뮬레이션 : 물건 값이 2000원이다(1000원 x2) 이 상황에서 기프티콘하나를 사용하여 1000원이 남았다.
         //              그 이후 할인으로 15%를 받아서 850원을 내야 하는데 카드결제를 한다.
         //              근데 카드결제 시 할인이 10%가 된다고 하면 850원에서 85원을 빼야 함.그 알고리즘 생각.
-        private DataSet ds;
+        // 위의 시뮬레이션은 답이없다 .
+
         public PayCredit()
         {
             InitializeComponent();
@@ -46,6 +48,10 @@ namespace CSVPos
             // 있다면 카드번화와 카드회사명을 조회한 값을 DataSet에 저장. 
             // 없다면 결제 안되게 return
             SelectCard(txtCardNum.Text);
+
+            SellMonitor sm = (SellMonitor)Owner;
+            sm.CardNum = this.txtCardNum.Text;
+            sm.UseCard = true;
 
             #region DataSet 사용
             //DataTable card = ds.Tables[0];
@@ -70,7 +76,8 @@ namespace CSVPos
             //    txtCardNum.Focus();
             //} 
             #endregion
-            // 카드 결제 해야하는부분
+
+            this.Close();
         }
 
         // 카드 조회 메서드(저장 프로시저 사용)
@@ -98,7 +105,6 @@ namespace CSVPos
                         }
                         sdr.Close();
                         con.Close();
-                        this.Close();
                     }
                     else
                     {
@@ -108,11 +114,6 @@ namespace CSVPos
                         txtCardNum.Focus();
                         sdr.Close();
                     }
-                    //SqlDataAdapter adapter = new SqlDataAdapter();
-                    //adapter.SelectCommand = cmd;
-
-                    //ds = new DataSet();
-                    //adapter.Fill(ds);
                 }
             }
         }
