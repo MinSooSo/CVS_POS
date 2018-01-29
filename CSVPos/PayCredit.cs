@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Configuration;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,6 +12,7 @@ namespace CSVPos
 {
     public partial class PayCredit : Form
     {
+<<<<<<< HEAD
         private string cardNum;
         private string cardCompanyName;
         // 카드 결제에 관한 클래스. 
@@ -28,6 +27,8 @@ namespace CSVPos
         //              근데 카드결제 시 할인이 10%가 된다고 하면 850원에서 85원을 빼야 함.그 알고리즘 생각.
         // 위의 시뮬레이션은 답이없다 .
 
+=======
+>>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
         public PayCredit()
         {
             InitializeComponent();
@@ -35,12 +36,12 @@ namespace CSVPos
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Close(); 
+            this.Close();
         }
 
-        // 결제 버튼 클릭 시 작동 이벤트
         private void btnPay_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             // ==> 이번 프로젝트에서 바코드는 읽을 수 있지만 카드를 읽는것이 가능한가? (추후 수정)
             //MessageBox.Show(txtCardNum.Text);
 
@@ -116,6 +117,10 @@ namespace CSVPos
                     }
                 }
             }
+=======
+            MessageBox.Show("카드 정보가 일치합니다.");
+            this.Close();
+>>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
         }
     }
 }

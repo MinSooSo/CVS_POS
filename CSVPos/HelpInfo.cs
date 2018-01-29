@@ -16,5 +16,11 @@ namespace CSVPos
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            checkLog cl = new checkLog();
+            cl.Show();
+        }
     }
 }

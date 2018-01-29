@@ -25,6 +25,7 @@ C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.FormSalesInfo.res
 C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.FormStoreStock.resources
 C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.FormProductOrder.resources
 C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.FormStockDisposal.resources
+<<<<<<< HEAD
 C:\CSharp\Winform\CSVPos\CSVPos\bin\Debug\CSVPos.exe.config
 C:\CSharp\Winform\CSVPos\CSVPos\bin\Debug\CSVPos.exe
 C:\CSharp\Winform\CSVPos\CSVPos\bin\Debug\CSVPos.pdb
@@ -53,3 +54,6 @@ C:\CSharp\Winform\CSVPos\CSVPos\obj\Debug\CSVPos.exe
 C:\CSharp\Winform\CSVPos\CSVPos\obj\Debug\CSVPos.pdb
 C:\CSharp\Winform\CSVPos\CSVPos\obj\Debug\CSVPos.FormGifti.resources
 C:\CSharp\Winform\CSVPos\CSVPos\obj\Debug\CSVPos.CustomerAgeGender.resources
+=======
+C:\Users\Minsoo.so\source\repos\CSVPos\CSVPos\obj\Debug\CSVPos.checkLog.resources
+>>>>>>> 11b071ab2186251cd137529d3214724db9fe8c53
