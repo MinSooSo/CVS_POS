@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtBillPreview = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtBillBarCode = new System.Windows.Forms.TextBox();
             this.btnPrint = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,7 +44,12 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtBarcodeBefore = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtBarcodeAfter = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -77,13 +82,13 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "조회 하실 영수증 번호";
             // 
-            // textBox2
+            // txtBillBarCode
             // 
-            this.textBox2.Location = new System.Drawing.Point(418, 173);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(296, 35);
-            this.textBox2.TabIndex = 5;
+            this.txtBillBarCode.Location = new System.Drawing.Point(418, 173);
+            this.txtBillBarCode.Multiline = true;
+            this.txtBillBarCode.Name = "txtBillBarCode";
+            this.txtBillBarCode.Size = new System.Drawing.Size(296, 35);
+            this.txtBillBarCode.TabIndex = 5;
             // 
             // btnPrint
             // 
@@ -208,12 +213,50 @@
             this.button1.Text = "영수증 출력";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // txtBarcodeBefore
+            // 
+            this.txtBarcodeBefore.Location = new System.Drawing.Point(878, 3);
+            this.txtBarcodeBefore.Multiline = true;
+            this.txtBarcodeBefore.Name = "txtBarcodeBefore";
+            this.txtBarcodeBefore.Size = new System.Drawing.Size(296, 35);
+            this.txtBarcodeBefore.TabIndex = 20;
+            this.txtBarcodeBefore.TextChanged += new System.EventHandler(this.txtTest_TextChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Location = new System.Drawing.Point(42, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(271, 88);
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
+            // txtBarcodeAfter
+            // 
+            this.txtBarcodeAfter.Location = new System.Drawing.Point(878, 38);
+            this.txtBarcodeAfter.Multiline = true;
+            this.txtBarcodeAfter.Name = "txtBarcodeAfter";
+            this.txtBarcodeAfter.Size = new System.Drawing.Size(296, 35);
+            this.txtBarcodeAfter.TabIndex = 22;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(831, 133);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(324, 159);
+            this.textBox1.TabIndex = 23;
+            // 
             // FormBill
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1180, 857);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBarcodeAfter);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.txtBarcodeBefore);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label7);
@@ -226,7 +269,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btnPrint);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtBillBarCode);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtBillPreview);
             this.Controls.Add(this.label1);
@@ -237,6 +280,7 @@
             this.Text = "FormBill";
             this.Load += new System.EventHandler(this.FormBill_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,7 +291,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBillPreview;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtBillBarCode;
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label3;
@@ -260,5 +304,9 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtBarcodeBefore;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtBarcodeAfter;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
