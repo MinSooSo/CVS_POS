@@ -50,7 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="checkLog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,14 +59,13 @@
     <Compile Include="claBarcode.cs" />
     <Compile Include="claCodeData.cs" />
     <Compile Include="Connection.cs" />
-    <Compile Include="CustomerAgeSex.cs">
-=======
+    <Compile Include="CustomerAgeSex.cs"/>
+
     <Compile Include="Connection.cs" />
     <Compile Include="CustomerAgeGender.cs">
->>>>>>> 953acf71e3990d27818ca962244183509afe0f2d
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomerAgeSex.Designer.cs">
+    <Compile Include="CustomerAgeSex.Designer.cs"/>
       <DependentUpon>CustomerAgeSex.cs</DependentUpon>
     <Compile Include="CustomerAgeGender.Designer.cs">
       <DependentUpon>CustomerAgeGender.cs</DependentUpon>
@@ -182,16 +180,11 @@
     <Compile Include="StoreM.Designer.cs">
       <DependentUpon>StoreM.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <EmbeddedResource Include="checkLog.resx">
       <DependentUpon>checkLog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CustomerAgeSex.resx">
-      <DependentUpon>CustomerAgeSex.cs</DependentUpon>
-=======
     <EmbeddedResource Include="CustomerAgeGender.resx">
       <DependentUpon>CustomerAgeGender.cs</DependentUpon>
->>>>>>> 953acf71e3990d27818ca962244183509afe0f2d
     </EmbeddedResource>
     <EmbeddedResource Include="FormBill.resx">
       <DependentUpon>FormBill.cs</DependentUpon>
