@@ -1,5 +1,0 @@
-C:\Users\Minsoo.so\Desktop\Barcode128\Barcode128\bin\Debug\Barcode128.dll
-C:\Users\Minsoo.so\Desktop\Barcode128\Barcode128\bin\Debug\Barcode128.pdb
-C:\Users\Minsoo.so\Desktop\Barcode128\Barcode128\obj\Debug\Barcode128.csproj.CoreCompileInputs.cache
-C:\Users\Minsoo.so\Desktop\Barcode128\Barcode128\obj\Debug\Barcode128.dll
-C:\Users\Minsoo.so\Desktop\Barcode128\Barcode128\obj\Debug\Barcode128.pdb

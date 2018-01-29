@@ -1,9 +1,0 @@
-diff a/CSVPos/CSVPos.csproj b/CSVPos/CSVPos.csproj	(rejected hunks)
-@@ -50,6 +50,7 @@
-     <Reference Include="System.Xml" />
-   </ItemGroup>
-   <ItemGroup>
-+<<<<<<< HEAD
-     <Compile Include="checkLog.cs">
-       <SubType>Form</SubType>
-     </Compile>
