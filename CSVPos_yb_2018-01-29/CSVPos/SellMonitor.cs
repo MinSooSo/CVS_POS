@@ -412,9 +412,9 @@ namespace CSVPos
 
             fd.txtBeforeDC.Text = allPrice.ToString();
             txtPrice.Text = fd.SendPrice().ToString();  // 결제 필요 금액
+            fd.ShowDialog();
             txtDiscount.Text = fd.SendPercent().ToString(); // 할인받은 금액
             
-            fd.ShowDialog();
         }
 
         private void btnCredit_Click(object sender, EventArgs e) // 카드 결제를 눌렀을 때

@@ -16,6 +16,7 @@ namespace CSVPos
     {
         private SqlConnection con;
         private double percentDC; // 할인 금액 (얼마나 할인해주는지)
+        private int discount;
         private int beforeDC; // 할인 전 가격
         private int afterDC; // 할인 후 가격
         public FormDiscount()
@@ -61,15 +62,15 @@ namespace CSVPos
 
                 // 할인 가격 
                 percentDC = percentDC * 0.01;
-                percentDC = (beforeDC * percentDC);
-                afterDC = beforeDC - (int)percentDC;
+                discount = (int)(beforeDC * percentDC);
+                afterDC = beforeDC - discount;
                 txtAfterDC.Text = afterDC.ToString();
             }            
         }
 
-        public double SendPercent()
+        public int SendPercent()
         {
-            return percentDC;
+            return discount;
         }
 
         public int SendPrice()
@@ -111,10 +112,7 @@ namespace CSVPos
             SellMonitor sm = (SellMonitor)Owner;
             sm.TeleDC = txtTelecom.Text;
             sm.btnGifti.Enabled = false;
-
             
-            SendPrice();
-            SendPercent();
             this.Close();
         }
     }
