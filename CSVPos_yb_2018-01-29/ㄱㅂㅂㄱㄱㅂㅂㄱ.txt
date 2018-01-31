@@ -1,0 +1,54 @@
+±Ù¹«½Ã°£ Â¥ÁÖ´Â Äõ¸®¹®
+
+select s.empNum, s.SM_name,l.LRtime,l.LRreleaseTime, cast(l.LRreleaseTime-l.LRtime as time)
+from CVS_LogRecord l inner join CVS_StaffManagement s
+on s.empNum = l.empNum
+
+
+
+Å·°«±¤Ç¥Çü
+
+
+	declare @hh int
+	declare @mm int
+	declare @ss int
+
+	select 
+	@hh = sum(datepart(hour,cast(LRreleaseTime-LRtime as time ))),
+	@mm = sum(datepart(minute,cast(LRreleaseTime-LRtime as time ))),
+	@ss = sum(datepart(second,cast(LRreleaseTime-LRtime as time )))
+	from CVS_LogRecord
+	where empNum = '201801122005'
+   
+	select empNum, cast(LRreleaseTime-LRtime as time ) 
+	from CVS_LogRecord
+	where empNum = '201801122005'
+	union
+	select empNum, CONVERT(varchar, CONCAT (@hh,':',@mm,':',@ss))
+	from CVS_LogRecord
+	where empNum = '201801122005'
+	group by empNum
+
+
+³»°¡ ¹Ù²Û °Í
+
+declare @hh int
+	declare @mm int
+	declare @ss int
+
+	select 
+	@hh = sum(datepart(hour,cast(LRreleaseTime-LRtime as time ))),
+	@mm = sum(datepart(minute,cast(LRreleaseTime-LRtime as time ))),
+	@ss = sum(datepart(second,cast(LRreleaseTime-LRtime as time )))
+	from CVS_LogRecord
+	where empNum = '201801122005'
+   
+	select empNum, CONVERT(varchar, CONCAT (@hh,':',@mm,':',@ss))
+	from CVS_LogRecord
+	where empNum = '201801122005'
+	
+	union
+	select empNum, CONVERT(varchar, CONCAT (@hh,':',@mm,':',@ss))
+	from CVS_LogRecord
+	where empNum = '201801122005'
+	group by empNum

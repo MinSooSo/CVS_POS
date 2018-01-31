@@ -34,13 +34,10 @@ namespace CSVPos
         SortedList<int, string> stockList = new SortedList<int, string>();
         SortedList<int, int> customerChargeList = new SortedList<int, int>();
         SortedList<int, string> billBarcodeList = new SortedList<int, string>();
-
         public FormBill()
         {
             InitializeComponent();
         }
-
-
         private void btnPrint_Click(object sender, EventArgs e) // 해당 영수증 발행을 눌렀을 때
         {
         }
@@ -465,8 +462,6 @@ namespace CSVPos
                 con.Close();
             }
         }
-
-
         public void timeStart()
         {
             label5.Text = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");

@@ -98,7 +98,6 @@ namespace CSVPos
 
             dataGridView1.DataSource = products;
         }
-
         public void timeStart()
         {
             label2.Text = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
@@ -120,8 +119,8 @@ namespace CSVPos
         private void btnGohome_Click(object sender, EventArgs e) // 직원 교대 테이블 
         {
             // 꺼졌다가 켜지는 부분 자연스럽게 가능한가염 아몰랑
-          
-            staffNum sn = new staffNum();
+            //staffNum sn = new staffNum();
+            StaffNum sn = new StaffNum();
             sn.Formname = "sell";
             sn.Show();
             this.Close();
@@ -414,7 +413,7 @@ namespace CSVPos
             fd.txtBeforeDC.Text = allPrice.ToString();
             txtPrice.Text = fd.SendPrice().ToString();  // 결제 필요 금액
             txtDiscount.Text = fd.SendPercent().ToString(); // 할인받은 금액
-
+            
             fd.ShowDialog();
         }
 
@@ -438,7 +437,6 @@ namespace CSVPos
                 SelectAgeGender();
             }
         }
-
         private void btnBill_Click(object sender, EventArgs e)// 영수증 발급을 눌렀을 때
         {
             FormBill fb = new FormBill();

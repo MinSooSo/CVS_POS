@@ -19,7 +19,7 @@ namespace CSVPos
 
         private void button1_Click(object sender, EventArgs e) // 판매 관리 버튼 
         {
-            staffNum sn = new staffNum();
+            StaffNum sn = new StaffNum();
             sn.Formname = "sellMonitor";
             sn.Show();
         }
@@ -28,16 +28,16 @@ namespace CSVPos
         {
             //FormStoreStock fss = new FormStoreStock();
             //fss.Show();
-
-            staffNum sn = new staffNum();
+            
+            StaffNum sn = new StaffNum();
             sn.Formname = "stockManagement";
             sn.Show();
         }
 
         private void btnStore_Click(object sender, EventArgs e) // 매장 관리 버튼 
         {
-            staffNum sn = new staffNum();
-            sn.Formname = "storeManagement";
+            StaffNum sn = new StaffNum();
+            sn.Formname = "store";
             sn.Show();
         }
 

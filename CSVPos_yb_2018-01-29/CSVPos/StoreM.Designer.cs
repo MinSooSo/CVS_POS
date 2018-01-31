@@ -45,6 +45,9 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.labelStaff = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.lblempName = new System.Windows.Forms.Label();
+            this.lblempNum = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
@@ -200,7 +203,7 @@
             this.btnStoreManage.Name = "btnStoreManage";
             this.btnStoreManage.Size = new System.Drawing.Size(205, 94);
             this.btnStoreManage.TabIndex = 3;
-            this.btnStoreManage.Text = "매장 관리";
+            this.btnStoreManage.Text = "매장 정보";
             this.btnStoreManage.UseVisualStyleBackColor = true;
             this.btnStoreManage.Click += new System.EventHandler(this.btnStoreManage_Click);
             // 
@@ -220,11 +223,11 @@
             this.labelStaff.AutoSize = true;
             this.labelStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelStaff.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelStaff.Location = new System.Drawing.Point(24, 85);
+            this.labelStaff.Location = new System.Drawing.Point(104, 85);
             this.labelStaff.Name = "labelStaff";
-            this.labelStaff.Size = new System.Drawing.Size(381, 39);
+            this.labelStaff.Size = new System.Drawing.Size(326, 39);
             this.labelStaff.TabIndex = 17;
-            this.labelStaff.Text = "*** 님 오늘도 수고하세요! ^^";
+            this.labelStaff.Text = "님 오늘도 수고하세요! ^^";
             // 
             // pictureBox4
             // 
@@ -237,12 +240,48 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
+            // lblempName
+            // 
+            this.lblempName.AutoSize = true;
+            this.lblempName.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblempName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblempName.Location = new System.Drawing.Point(10, 85);
+            this.lblempName.Name = "lblempName";
+            this.lblempName.Size = new System.Drawing.Size(62, 39);
+            this.lblempName.TabIndex = 18;
+            this.lblempName.Text = "***";
+            // 
+            // lblempNum
+            // 
+            this.lblempNum.AutoSize = true;
+            this.lblempNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblempNum.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblempNum.Location = new System.Drawing.Point(10, 7);
+            this.lblempNum.Name = "lblempNum";
+            this.lblempNum.Size = new System.Drawing.Size(62, 39);
+            this.lblempNum.TabIndex = 19;
+            this.lblempNum.Text = "***";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(284, 7);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(131, 39);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "님 사용중";
+            // 
             // StoreM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1180, 857);
+            this.ClientSize = new System.Drawing.Size(1180, 833);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblempNum);
+            this.Controls.Add(this.lblempName);
             this.Controls.Add(this.labelStaff);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.groupBox2);
@@ -282,5 +321,8 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label labelStaff;
+        internal System.Windows.Forms.Label lblempName;
+        private System.Windows.Forms.Label label6;
+        internal System.Windows.Forms.Label lblempNum;
     }
 }

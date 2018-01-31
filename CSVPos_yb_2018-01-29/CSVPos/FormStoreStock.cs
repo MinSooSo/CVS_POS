@@ -8,7 +8,7 @@ namespace CSVPos
         private string EmpName;
 
         public string EmpName1 { get => EmpName; set => EmpName = value; }
-
+        
         public FormStoreStock()
         {
             InitializeComponent();

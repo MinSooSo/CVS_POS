@@ -137,6 +137,12 @@
     <Compile Include="HelpInfo.Designer.cs">
       <DependentUpon>HelpInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="InputPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputPay.Designer.cs">
+      <DependentUpon>InputPay.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,12 @@
     <Compile Include="StaffNum.Designer.cs">
       <DependentUpon>StaffNum.cs</DependentUpon>
     </Compile>
+    <Compile Include="staffWorkTimeTalbe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffWorkTimeTalbe.Designer.cs">
+      <DependentUpon>staffWorkTimeTalbe.cs</DependentUpon>
+    </Compile>
     <Compile Include="StoreM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +193,18 @@
     <EmbeddedResource Include="checkLog.resx">
       <DependentUpon>checkLog.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="UpdatePay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePay.Designer.cs">
+      <DependentUpon>UpdatePay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmpInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEmpInfo.Designer.cs">
+      <DependentUpon>ViewEmpInfo.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormBill.resx">
       <DependentUpon>FormBill.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +219,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPayment.resx">
       <DependentUpon>FormPayment.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FormProductOrder.resx">
       <DependentUpon>FormProductOrder.cs</DependentUpon>
@@ -210,12 +235,16 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormStoreStock.resx">
       <DependentUpon>FormStoreStock.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPost.resx">
       <DependentUpon>frmPost.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HelpInfo.resx">
       <DependentUpon>HelpInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputPay.resx">
+      <DependentUpon>InputPay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -238,13 +267,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StaffM.resx">
       <DependentUpon>StaffM.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffNum.resx">
       <DependentUpon>StaffNum.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="staffWorkTimeTalbe.resx">
+      <DependentUpon>staffWorkTimeTalbe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StoreM.resx">
       <DependentUpon>StoreM.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePay.resx">
+      <DependentUpon>UpdatePay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewEmpInfo.resx">
+      <DependentUpon>ViewEmpInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

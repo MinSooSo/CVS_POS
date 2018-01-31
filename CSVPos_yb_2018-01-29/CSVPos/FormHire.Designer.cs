@@ -28,54 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblCallupNam = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.txtempAddress = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtempNum = new System.Windows.Forms.TextBox();
+            this.lablEmpForm = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.radioWoman = new System.Windows.Forms.RadioButton();
+            this.radioMan = new System.Windows.Forms.RadioButton();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.lblemployee = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtempAge = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtempName = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnHire = new System.Windows.Forms.Button();
             this.btnDiscount = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblpresentEmp = new System.Windows.Forms.Label();
+            this.lbltotalEmp = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.txtempPhoneNum = new System.Windows.Forms.MaskedTextBox();
+            this.txtempResidentNum = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
-            // label12
+            // lblCallupNam
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(222, 76);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(273, 33);
-            this.label12.TabIndex = 22;
-            this.label12.Text = "부모 폼에서 정보 가져오기";
+            this.lblCallupNam.AutoSize = true;
+            this.lblCallupNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCallupNam.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblCallupNam.Location = new System.Drawing.Point(222, 76);
+            this.lblCallupNam.Name = "lblCallupNam";
+            this.lblCallupNam.Size = new System.Drawing.Size(273, 33);
+            this.lblCallupNam.TabIndex = 22;
+            this.lblCallupNam.Text = "부모 폼에서 정보 가져오기";
             // 
             // label7
             // 
@@ -111,26 +116,29 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.txtempResidentNum);
+            this.groupBox1.Controls.Add(this.txtempPhoneNum);
+            this.groupBox1.Controls.Add(this.txtempAddress);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.txtempNum);
+            this.groupBox1.Controls.Add(this.lablEmpForm);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.radioWoman);
+            this.groupBox1.Controls.Add(this.radioMan);
+            this.groupBox1.Controls.Add(this.lblTime);
+            this.groupBox1.Controls.Add(this.lblemployee);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtempAge);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Font = new System.Drawing.Font("Dubai", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Controls.Add(this.txtempName);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Location = new System.Drawing.Point(36, 112);
             this.groupBox1.Name = "groupBox1";
@@ -139,177 +147,182 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "고용 계약서 작성 ";
             // 
-            // radioButton3
+            // txtempAddress
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(286, 475);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(245, 44);
-            this.radioButton3.TabIndex = 43;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "아르바이트 입니다.";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.txtempAddress.Location = new System.Drawing.Point(329, 541);
+            this.txtempAddress.Name = "txtempAddress";
+            this.txtempAddress.Size = new System.Drawing.Size(477, 35);
+            this.txtempAddress.TabIndex = 48;
             // 
-            // radioButton2
+            // label9
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(433, 255);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 44);
-            this.radioButton2.TabIndex = 42;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "여자";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(54, 322);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(148, 29);
+            this.label9.TabIndex = 47;
+            this.label9.Text = "주민등록번호 : ";
             // 
-            // radioButton1
+            // txtempNum
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(222, 255);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 44);
-            this.radioButton1.TabIndex = 41;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "남자";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.txtempNum.Location = new System.Drawing.Point(222, 113);
+            this.txtempNum.Name = "txtempNum";
+            this.txtempNum.Size = new System.Drawing.Size(296, 35);
+            this.txtempNum.TabIndex = 45;
             // 
-            // label16
+            // lablEmpForm
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(218, 639);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(232, 40);
-            this.label16.TabIndex = 40;
-            this.label16.Text = "현재 시간 자동 입력";
+            this.lablEmpForm.AutoSize = true;
+            this.lablEmpForm.Location = new System.Drawing.Point(218, 61);
+            this.lablEmpForm.Name = "lablEmpForm";
+            this.lablEmpForm.Size = new System.Drawing.Size(108, 29);
+            this.lablEmpForm.TabIndex = 44;
+            this.lablEmpForm.Text = "아르바이트";
             // 
-            // label14
+            // label6
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(218, 561);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(667, 40);
-            this.label14.TabIndex = 39;
-            this.label14.Text = "부모 폼에서 가지고 온 현재 접속자 그대로 찍어주면 됩니다. ";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(54, 61);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(117, 29);
+            this.label6.TabIndex = 43;
+            this.label6.Text = "고용 형태 : ";
+            // 
+            // radioWoman
+            // 
+            this.radioWoman.AutoSize = true;
+            this.radioWoman.Location = new System.Drawing.Point(433, 387);
+            this.radioWoman.Name = "radioWoman";
+            this.radioWoman.Size = new System.Drawing.Size(69, 33);
+            this.radioWoman.TabIndex = 42;
+            this.radioWoman.TabStop = true;
+            this.radioWoman.Text = "여자";
+            this.radioWoman.UseVisualStyleBackColor = true;
+            // 
+            // radioMan
+            // 
+            this.radioMan.AutoSize = true;
+            this.radioMan.Location = new System.Drawing.Point(222, 387);
+            this.radioMan.Name = "radioMan";
+            this.radioMan.Size = new System.Drawing.Size(69, 33);
+            this.radioMan.TabIndex = 41;
+            this.radioMan.TabStop = true;
+            this.radioMan.Text = "남자";
+            this.radioMan.UseVisualStyleBackColor = true;
+            // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.Location = new System.Drawing.Point(218, 687);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(186, 29);
+            this.lblTime.TabIndex = 40;
+            this.lblTime.Text = "현재 시간 자동 입력";
+            // 
+            // lblemployee
+            // 
+            this.lblemployee.AutoSize = true;
+            this.lblemployee.Location = new System.Drawing.Point(218, 609);
+            this.lblemployee.Name = "lblemployee";
+            this.lblemployee.Size = new System.Drawing.Size(539, 29);
+            this.lblemployee.TabIndex = 39;
+            this.lblemployee.Text = "부모 폼에서 가지고 온 현재 접속자 그대로 찍어주면 됩니다. ";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(54, 639);
+            this.label13.Location = new System.Drawing.Point(54, 687);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(132, 40);
+            this.label13.Size = new System.Drawing.Size(110, 29);
             this.label13.TabIndex = 38;
             this.label13.Text = "고용 일시 :";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(54, 561);
+            this.label11.Location = new System.Drawing.Point(54, 609);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(107, 40);
+            this.label11.Size = new System.Drawing.Size(91, 29);
             this.label11.TabIndex = 37;
             this.label11.Text = "고용인 : ";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(215, 53);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(467, 40);
-            this.label9.TabIndex = 36;
-            this.label9.Text = "지정된 양식으로 랜덤 번호 생성해서 삽입";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(54, 53);
+            this.label8.Location = new System.Drawing.Point(54, 119);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(77, 40);
+            this.label8.Size = new System.Drawing.Size(65, 29);
             this.label8.TabIndex = 35;
             this.label8.Text = "사번 :";
             // 
             // button1
             // 
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(222, 403);
+            this.button1.Location = new System.Drawing.Point(222, 535);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 48);
+            this.button1.Size = new System.Drawing.Size(104, 48);
             this.button1.TabIndex = 8;
             this.button1.Text = "주소 검색";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(54, 479);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(207, 40);
-            this.label6.TabIndex = 34;
-            this.label6.Text = "아르바이트 여부 :";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(54, 407);
+            this.label5.Location = new System.Drawing.Point(54, 539);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 40);
+            this.label5.Size = new System.Drawing.Size(72, 29);
             this.label5.TabIndex = 32;
             this.label5.Text = "주소 : ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(54, 332);
+            this.label4.Location = new System.Drawing.Point(54, 464);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 40);
+            this.label4.Size = new System.Drawing.Size(103, 29);
             this.label4.TabIndex = 30;
             this.label4.Text = "전화번호 :";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(222, 329);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(296, 48);
-            this.textBox4.TabIndex = 29;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(54, 257);
+            this.label3.Location = new System.Drawing.Point(54, 389);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 40);
+            this.label3.Size = new System.Drawing.Size(72, 29);
             this.label3.TabIndex = 28;
             this.label3.Text = "성별 : ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(54, 186);
+            this.label2.Location = new System.Drawing.Point(54, 252);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 40);
+            this.label2.Size = new System.Drawing.Size(72, 29);
             this.label2.TabIndex = 26;
             this.label2.Text = "나이 : ";
             // 
-            // textBox2
+            // txtempAge
             // 
-            this.textBox2.Location = new System.Drawing.Point(222, 183);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(296, 48);
-            this.textBox2.TabIndex = 25;
+            this.txtempAge.Location = new System.Drawing.Point(222, 249);
+            this.txtempAge.Name = "txtempAge";
+            this.txtempAge.Size = new System.Drawing.Size(296, 35);
+            this.txtempAge.TabIndex = 25;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(54, 118);
+            this.label10.Location = new System.Drawing.Point(54, 184);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(82, 40);
+            this.label10.Size = new System.Drawing.Size(72, 29);
             this.label10.TabIndex = 24;
             this.label10.Text = "이름 : ";
             // 
-            // textBox1
+            // txtempName
             // 
-            this.textBox1.Location = new System.Drawing.Point(222, 115);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(296, 48);
-            this.textBox1.TabIndex = 23;
+            this.txtempName.Location = new System.Drawing.Point(222, 181);
+            this.txtempName.Name = "txtempName";
+            this.txtempName.Size = new System.Drawing.Size(296, 35);
+            this.txtempName.TabIndex = 23;
             // 
             // groupBox2
             // 
@@ -348,6 +361,8 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.lblpresentEmp);
+            this.groupBox3.Controls.Add(this.lbltotalEmp);
             this.groupBox3.Controls.Add(this.label18);
             this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -358,6 +373,24 @@
             this.groupBox3.TabIndex = 30;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "현재 직원 현황";
+            // 
+            // lblpresentEmp
+            // 
+            this.lblpresentEmp.AutoSize = true;
+            this.lblpresentEmp.Location = new System.Drawing.Point(103, 121);
+            this.lblpresentEmp.Name = "lblpresentEmp";
+            this.lblpresentEmp.Size = new System.Drawing.Size(115, 29);
+            this.lblpresentEmp.TabIndex = 46;
+            this.lblpresentEmp.Text = "현재 직원수";
+            // 
+            // lbltotalEmp
+            // 
+            this.lbltotalEmp.AutoSize = true;
+            this.lbltotalEmp.Location = new System.Drawing.Point(103, 47);
+            this.lbltotalEmp.Name = "lbltotalEmp";
+            this.lbltotalEmp.Size = new System.Drawing.Size(115, 29);
+            this.lbltotalEmp.TabIndex = 45;
+            this.lbltotalEmp.Text = "역대 직원수";
             // 
             // label18
             // 
@@ -399,6 +432,22 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
+            // txtempPhoneNum
+            // 
+            this.txtempPhoneNum.Location = new System.Drawing.Point(221, 464);
+            this.txtempPhoneNum.Mask = "000-9000-0000";
+            this.txtempPhoneNum.Name = "txtempPhoneNum";
+            this.txtempPhoneNum.Size = new System.Drawing.Size(183, 35);
+            this.txtempPhoneNum.TabIndex = 49;
+            // 
+            // txtempResidentNum
+            // 
+            this.txtempResidentNum.Location = new System.Drawing.Point(221, 322);
+            this.txtempResidentNum.Mask = "000000-0000000";
+            this.txtempResidentNum.Name = "txtempResidentNum";
+            this.txtempResidentNum.Size = new System.Drawing.Size(203, 35);
+            this.txtempResidentNum.TabIndex = 50;
+            // 
             // FormHire
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -411,12 +460,13 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.lblCallupNam);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "FormHire";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "역대 직원 수";
             this.Load += new System.EventHandler(this.FormHire_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -430,38 +480,42 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnHire;
         private System.Windows.Forms.Button btnDiscount;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtempAge;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtempName;
+        private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioWoman;
+        private System.Windows.Forms.RadioButton radioMan;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.TextBox txtempNum;
+        private System.Windows.Forms.Label lablEmpForm;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtempAddress;
+        public System.Windows.Forms.Button btnHire;
+        internal System.Windows.Forms.Label lblCallupNam;
+        internal System.Windows.Forms.Label lblemployee;
+        private System.Windows.Forms.Label lblpresentEmp;
+        private System.Windows.Forms.Label lbltotalEmp;
+        private System.Windows.Forms.MaskedTextBox txtempPhoneNum;
+        private System.Windows.Forms.MaskedTextBox txtempResidentNum;
     }
 }
