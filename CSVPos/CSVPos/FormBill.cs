@@ -401,7 +401,7 @@ namespace CSVPos
 
             // bitmap graphics 지원함. 
 
-            pic.Image = new Bitmap(@"C:\Users\news2\OneDrive\문서\CVS_POS\CSVPos_yb_2018-01-29\CSVPos\mainTitle.PNG");
+            pic.Image = new Bitmap(@"C:\Users\news2\OneDrive\문서\CVS_POS\CSVPos\CSVPos\mainTitle.PNG");
             txtBillPreview.Controls.Add(pic);
 
             txtBillPreview.Text += "\r\n\r\n\r\n\r\n\r\n";
